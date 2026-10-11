@@ -243,9 +243,20 @@ class DeviceHandler(AbletonOSCHandler):
             param_index = int(params[0])
             return param_index, device.parameters[param_index].name
 
+        def device_get_parameter_short_name(device, params: Tuple[Any] = ()):
+            #--------------------------------------------------------------------------------
+            # The name Live displays under a dial. For Max for Live devices
+            # this differs from `name`; falls back to `name` where the
+            # property doesn't exist.
+            #--------------------------------------------------------------------------------
+            param_index = int(params[0])
+            parameter = device.parameters[param_index]
+            return param_index, (getattr(parameter, "short_name", None) or parameter.name)
+
         self.osc_server.add_handler("/live/device/get/parameter/value", create_device_callback(device_get_parameter_value))
         self.osc_server.add_handler("/live/device/get/parameter/value_string", create_device_callback(device_get_parameter_value_string))
         self.osc_server.add_handler("/live/device/set/parameter/value", create_device_callback(device_set_parameter_value))
         self.osc_server.add_handler("/live/device/get/parameter/name", create_device_callback(device_get_parameter_name))
+        self.osc_server.add_handler("/live/device/get/parameter/short_name", create_device_callback(device_get_parameter_short_name))
         self.osc_server.add_handler("/live/device/start_listen/parameter/value", create_device_callback(device_get_parameter_value_listener, include_ids = True))
         self.osc_server.add_handler("/live/device/stop_listen/parameter/value", create_device_callback(device_get_parameter_remove_value_listener, include_ids = True))
