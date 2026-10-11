@@ -74,6 +74,13 @@ class OSCServer:
         """
         msg_builder = OscMessageBuilder(address)
         for param in params:
+            #--------------------------------------------------------------------------------
+            # Send booleans as ints. python-osc encodes Python bools as the OSC 1.1
+            # T/F type tags, which clients limited to the OSC 1.0 core types
+            # (int32/float32/string/blob) reject, discarding the whole message.
+            #--------------------------------------------------------------------------------
+            if isinstance(param, bool):
+                param = int(param)
             msg_builder.add_arg(param)
 
         try:
