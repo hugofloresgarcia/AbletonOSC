@@ -283,6 +283,59 @@ class SongHandler(AbletonOSCHandler):
         self.osc_server.add_handler("/live/song/start_listen/beat", start_beat_listener)
         self.osc_server.add_handler("/live/song/stop_listen/beat", stop_beat_listener)
 
+        #--------------------------------------------------------------------------------
+        # Master track: volume (get/set/listen) and output meters (listen).
+        # Replies are sent to /live/song/get/master_<property>.
+        #--------------------------------------------------------------------------------
+        self._master_listeners = {}
+
+        def master_volume_parameter():
+            return self.song.master_track.mixer_device.volume
+
+        def song_get_master_volume(params: Tuple[Any] = ()):
+            return master_volume_parameter().value,
+
+        def song_set_master_volume(params: Tuple[Any] = ()):
+            master_volume_parameter().value = params[0]
+
+        def master_listen_stop(key):
+            if key in self._master_listeners:
+                target, remove_name, callback = self._master_listeners.pop(key)
+                try:
+                    getattr(target, remove_name)(callback)
+                except Exception as e:
+                    self.logger.info("Exception whilst removing listener (likely benign): %s" % e)
+
+        def master_listen_start(key, target, add_name, remove_name, send_value):
+            master_listen_stop(key)
+            def callback():
+                self.osc_server.send("/live/song/get/master_%s" % key, (send_value(),))
+            getattr(target, add_name)(callback)
+            self._master_listeners[key] = (target, remove_name, callback)
+            callback()
+
+        def start_listen_master_volume(params: Tuple[Any] = ()):
+            master_listen_start("volume", master_volume_parameter(),
+                                "add_value_listener", "remove_value_listener",
+                                lambda: master_volume_parameter().value)
+
+        def start_listen_master_meter(side):
+            def start(params: Tuple[Any] = ()):
+                master_listen_start("output_meter_%s" % side, self.song.master_track,
+                                    "add_output_meter_%s_listener" % side,
+                                    "remove_output_meter_%s_listener" % side,
+                                    lambda: getattr(self.song.master_track, "output_meter_%s" % side))
+            return start
+
+        self.osc_server.add_handler("/live/song/get/master_volume", song_get_master_volume)
+        self.osc_server.add_handler("/live/song/set/master_volume", song_set_master_volume)
+        self.osc_server.add_handler("/live/song/start_listen/master_volume", start_listen_master_volume)
+        self.osc_server.add_handler("/live/song/stop_listen/master_volume", lambda params=(): master_listen_stop("volume"))
+        self.osc_server.add_handler("/live/song/start_listen/master_output_meter_left", start_listen_master_meter("left"))
+        self.osc_server.add_handler("/live/song/stop_listen/master_output_meter_left", lambda params=(): master_listen_stop("output_meter_left"))
+        self.osc_server.add_handler("/live/song/start_listen/master_output_meter_right", start_listen_master_meter("right"))
+        self.osc_server.add_handler("/live/song/stop_listen/master_output_meter_right", lambda params=(): master_listen_stop("output_meter_right"))
+
     def current_song_time_changed(self):
         #--------------------------------------------------------------------------------
         # If song has rewound or skipped to next beat, sent a /live/beat message
@@ -294,6 +347,12 @@ class SongHandler(AbletonOSCHandler):
 
     def clear_api(self):
         super().clear_api()
+        for key in list(getattr(self, "_master_listeners", {})):
+            target, remove_name, callback = self._master_listeners.pop(key)
+            try:
+                getattr(target, remove_name)(callback)
+            except Exception:
+                pass
         try:
             self.song.remove_current_song_time_listener(self.current_song_time_changed)
         except:
