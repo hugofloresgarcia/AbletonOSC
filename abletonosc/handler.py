@@ -1,7 +1,70 @@
 from ableton.v2.control_surface.component import Component
 from typing import Optional, Tuple, Any
 import logging
+import Live
 from .osc_server import OSCServer
+
+#--------------------------------------------------------------------------------
+# Device specifiers.
+#
+# Endpoints that address a device accept either:
+#  - an int, the index of a top-level device on the track (backwards-compatible), or
+#  - a string path of dot-separated indices, descending into rack chains:
+#    "2"     -> track.devices[2]
+#    "2.1.0" -> track.devices[2].chains[1].devices[0]
+#    "2.1.0.0.3" -> ...chains[0].devices[3], to arbitrary depth.
+#--------------------------------------------------------------------------------
+def parse_device_spec(spec) -> list:
+    """
+    Parse a device specifier into a list of int indices:
+    [device, (chain, device)*]
+    """
+    if isinstance(spec, (int, float)):
+        return [int(spec)]
+    indices = [int(part) for part in str(spec).strip().split(".")]
+    if len(indices) % 2 != 1:
+        raise ValueError("Invalid device path %s: must alternate device/chain indices, e.g. 2.1.0" % spec)
+    return indices
+
+def resolve_device(track, spec):
+    """
+    Resolve a device specifier (see parse_device_spec) to a Live Device
+    object on `track`, descending into rack chains as needed.
+    """
+    indices = parse_device_spec(spec)
+    device = track.devices[indices[0]]
+    for position in range(1, len(indices), 2):
+        chain_index, device_index = indices[position], indices[position + 1]
+        device = device.chains[chain_index].devices[device_index]
+    return device
+
+def device_path_spec(song, device) -> Tuple[int, str]:
+    """
+    Return (track_index, device_path) for a Live Device object, by walking up
+    canonical_parent through any enclosing rack chains.
+    track_index is -1 for devices not on a regular track (e.g. return/master).
+    """
+    segments = []
+    descendant = device
+    while True:
+        parent = descendant.canonical_parent
+        if isinstance(parent, Live.Track.Track):
+            segments.insert(0, list(parent.devices).index(descendant))
+            track = parent
+            break
+        #--------------------------------------------------------------------------------
+        # parent is a (drum) rack chain; its canonical_parent is the rack device.
+        #--------------------------------------------------------------------------------
+        chain = parent
+        rack = chain.canonical_parent
+        segments.insert(0, list(chain.devices).index(descendant))
+        segments.insert(0, list(rack.chains).index(chain))
+        descendant = rack
+    try:
+        track_index = list(song.tracks).index(track)
+    except ValueError:
+        track_index = -1
+    return track_index, ".".join(str(segment) for segment in segments)
 
 class AbletonOSCHandler(Component):
     def __init__(self, manager):
