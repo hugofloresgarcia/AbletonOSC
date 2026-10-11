@@ -212,10 +212,15 @@ Represents the view (user interface) of live
 | /live/view/set/selected_track          | track_index              |                          | Set the selected track (first track = 0)                |
 | /live/view/set/selected_clip           | track_index, scene_index |                          | Set the selected clip                                   |
 | /live/view/set/selected_device         | track_index, device_index|                          | Set the selected device (first device = 0)              |
+| /live/view/get/selected_device_path    |                          | track_index, device_path | Get the selected device as a dotted device path (see [Device API](#device-api)), which also resolves devices nested in rack chains. device_path is "" if no device is selected; track_index is -1 for return/master tracks |
 | /live/view/start_listen/selected_scene |                          | selected_scene           | Start listening to the selected scene (first scene = 0) |
 | /live/view/start_listen/selected_track |                          | selected_track           | Start listening to selected track (first track = 0)     |
+| /live/view/start_listen/selected_device_path |                    | track_index, device_path | Start listening to the selected device, across track changes. Replies are sent to /live/view/get/selected_device_path |
 | /live/view/stop_listen/selected_scene  |                          |                          | Stop listening to the selected scene (first scene = 0)  |
 | /live/view/stop_listen/selected_track  |                          |                          | Stop listening to selected track (first track = 0)      |
+| /live/view/stop_listen/selected_device_path |                     |                          | Stop listening to the selected device                   |
+
+`/live/view/set/selected_device` also accepts a dotted device path as its `device_index`, to select devices nested in rack chains.
 </details>
 
 ---
@@ -315,6 +320,9 @@ To query the properties of multiple tracks, see [Song: Properties of cue points,
 | /live/track/get/devices/name       | track_id     | track_id, [name, ...]  | Query all device names on track          |
 | /live/track/get/devices/type       | track_id     | track_id, [type, ...]  | Query all devices types on track         |
 | /live/track/get/devices/class_name | track_id     | track_id, [class, ...] | Query all device class names on track    |
+| /live/track/get/devices/can_have_chains | track_id | track_id, [value, ...] | Returns 1 for each device that is a rack |
+| /live/track/start_listen/devices   | track_id     | track_id, [name, ...]  | Start listening for devices being added, removed or reordered on the track. Replies are sent to /live/track/get/devices/name |
+| /live/track/stop_listen/devices    | track_id     |                        | Stop listening for device list changes   |
 
 See [Device API](#device-api) for details on Device type/class_names.
  
@@ -475,6 +483,18 @@ Represents an instrument or effect.
 <details>
 <summary><b>Documentation</b>: Device API</summary>
 
+### Device addressing
+
+`device_id` can be either:
+
+- an **int**, the index of a top-level device on the track (first device = 0), or
+- a **string path** of dot-separated indices which descends into rack chains, to arbitrary depth:
+  `"2"` addresses the third device on the track; `"2.1.0"` addresses the first device on the second
+  chain of that rack; `"2.1.0.0.3"` descends into a further nested rack, and so on.
+
+Responses echo int addresses back as ints and string paths back verbatim, so existing clients are unaffected.
+See [Chain API](#chain-api) for enumerating the chains of a rack.
+
 ### Device properties
 
 - Changes for any Parameter property can be listened for by calling `/live/device/start_listen/parameter/value <track_index> <device index> <parameter_index>`
@@ -484,6 +504,13 @@ Represents an instrument or effect.
 | /live/device/get/name                    | track_id, device_id                      | track_id, device_id, name                | Get device name                                                                         |
 | /live/device/get/class_name              | track_id, device_id                      | track_id, device_id, class_name          | Get device class_name                                                                   |
 | /live/device/get/type                    | track_id, device_id                      | track_id, device_id, type                | Get device type                                                                         |
+| /live/device/get/can_have_chains         | track_id, device_id                      | track_id, device_id, can_have_chains     | Returns 1 if the device is a rack                                                       |
+| /live/device/get/can_have_drum_pads      | track_id, device_id                      | track_id, device_id, can_have_drum_pads  | Returns 1 if the device is a drum rack                                                  |
+| /live/device/get/num_chains              | track_id, device_id                      | track_id, device_id, num_chains          | Get the number of chains of a rack device (0 for non-rack devices)                      |
+| /live/device/get/chains/name             | track_id, device_id                      | track_id, device_id, [name, ...]         | Get the names of a rack device's chains                                                 |
+| /live/device/get/chains/color            | track_id, device_id                      | track_id, device_id, [color, ...]        | Get the colors of a rack device's chains, as 0x00RRGGBB ints                            |
+| /live/device/get/chains/color_index      | track_id, device_id                      | track_id, device_id, [color_index, ...]  | Get the color indices of a rack device's chains                                         |
+| /live/device/get/chains/num_devices      | track_id, device_id                      | track_id, device_id, [count, ...]        | Get the number of devices on each of a rack device's chains                             |
 | /live/device/get/num_parameters          | track_id, device_id                      | track_id, device_id, num_parameters      | Get the number of parameters exposed by the device                                      |
 | /live/device/get/parameters/name         | track_id, device_id                      | track_id, device_id, [name, ...]         | Get the list of parameter names exposed by the device                                   |
 | /live/device/get/parameters/value        | track_id, device_id                      | track_id, device_id, [value, ...]        | Get the device parameter values                                                         |
@@ -501,6 +528,47 @@ For devices:
 - `type` is 1 = audio_effect, 2 = instrument, 4 = midi_effect
 - `class_name` is the Live instrument/effect name, e.g. Operator, Reverb. For external plugins and racks, can be
   AuPluginDevice, PluginDevice, InstrumentGroupDevice...
+
+</details>
+
+
+---
+
+## Chain API
+
+Represents a chain of a rack device (Instrument, Audio Effect, MIDI Effect or Drum Rack).
+
+Chains are addressed by `(track_id, device_id, chain_id)`, where `device_id` addresses the rack
+device and can be a dotted device path for nested racks (see [Device API](#device-api)).
+Devices within a chain are addressed through the `/live/device` endpoints using device paths.
+
+<details>
+<summary><b>Documentation</b>: Chain API</summary>
+
+### Chain properties
+
+Changes to `name`, `color`, `color_index`, `mute` and `solo` can be listened for with
+`/live/chain/start_listen/<property> <track_id> <device_id> <chain_id>`, with replies sent to
+the corresponding `/live/chain/get/<property>` address. `stop_listen` ends the subscription.
+
+| Address                                  | Query params                   | Response params                           | Description                                             |
+|:------------------------------------------|:--------------------------------|:-------------------------------------------|:---------------------------------------------------------|
+| /live/chain/get/name                      | track_id, device_id, chain_id  | track_id, device_id, chain_id, name       | Get chain name                                          |
+| /live/chain/get/color                     | track_id, device_id, chain_id  | track_id, device_id, chain_id, color      | Get chain color, as a 0x00RRGGBB int                    |
+| /live/chain/get/color_index               | track_id, device_id, chain_id  | track_id, device_id, chain_id, color_index| Get chain color index                                   |
+| /live/chain/get/mute                      | track_id, device_id, chain_id  | track_id, device_id, chain_id, mute       | Get chain mute                                          |
+| /live/chain/get/solo                      | track_id, device_id, chain_id  | track_id, device_id, chain_id, solo       | Get chain solo                                          |
+| /live/chain/get/muted_via_solo            | track_id, device_id, chain_id  | track_id, device_id, chain_id, muted      | Returns 1 if the chain is muted because another is soloed |
+| /live/chain/set/name                      | track_id, device_id, chain_id, name |                                      | Set chain name                                          |
+| /live/chain/set/color                     | track_id, device_id, chain_id, color |                                     | Set chain color                                         |
+| /live/chain/set/color_index               | track_id, device_id, chain_id, color_index |                               | Set chain color index                                   |
+| /live/chain/set/mute                      | track_id, device_id, chain_id, mute |                                      | Set chain mute                                          |
+| /live/chain/set/solo                      | track_id, device_id, chain_id, solo |                                      | Set chain solo                                          |
+| /live/chain/get/num_devices               | track_id, device_id, chain_id  | track_id, device_id, chain_id, num_devices | Get the number of devices on the chain                 |
+| /live/chain/get/devices/name              | track_id, device_id, chain_id  | track_id, device_id, chain_id, [name, ...] | Get the names of the chain's devices                   |
+| /live/chain/get/devices/type              | track_id, device_id, chain_id  | track_id, device_id, chain_id, [type, ...] | Get the types of the chain's devices                   |
+| /live/chain/get/devices/class_name        | track_id, device_id, chain_id  | track_id, device_id, chain_id, [class_name, ...] | Get the class names of the chain's devices       |
+| /live/chain/get/devices/can_have_chains   | track_id, device_id, chain_id  | track_id, device_id, chain_id, [value, ...] | Returns 1 for each of the chain's devices that is itself a rack |
 
 </details>
 
