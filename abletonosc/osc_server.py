@@ -92,6 +92,13 @@ class OSCServer:
             self.logger.error("AbletonOSC: OSC build error: %s" % (traceback.format_exc()))
 
     def process_message(self, message, remote_addr):
+        #--------------------------------------------------------------------------------
+        # Follow the most recent client for asynchronous sends (listener
+        # callbacks), which otherwise always go to the default 127.0.0.1 and
+        # never reach remote clients such as tablets on the local network.
+        #--------------------------------------------------------------------------------
+        self._remote_addr = (remote_addr[0], self._response_port)
+
         if message.address in self._callbacks:
             callback = self._callbacks[message.address]
             rv = callback(message.params)
