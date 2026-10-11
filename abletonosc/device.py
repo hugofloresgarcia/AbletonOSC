@@ -73,13 +73,18 @@ class DeviceHandler(AbletonOSCHandler):
             self.osc_server.add_handler("/live/device/%s" % method,
                                         create_device_callback(self._call_method, method))
 
+        #--------------------------------------------------------------------------------
+        # Property listeners register with include_ids so that listener
+        # replies carry (track_id, device_id) like getter replies do, and so
+        # listener keys don't collide between devices.
+        #--------------------------------------------------------------------------------
         for prop in properties_r + properties_rw:
             self.osc_server.add_handler("/live/device/get/%s" % prop,
                                         create_device_callback(self._get_property, prop))
             self.osc_server.add_handler("/live/device/start_listen/%s" % prop,
-                                        create_device_callback(self._start_listen, prop))
+                                        create_device_callback(self._start_listen, prop, include_ids=True))
             self.osc_server.add_handler("/live/device/stop_listen/%s" % prop,
-                                        create_device_callback(self._stop_listen, prop))
+                                        create_device_callback(self._stop_listen, prop, include_ids=True))
         for prop in properties_rw:
             self.osc_server.add_handler("/live/device/set/%s" % prop,
                                         create_device_callback(self._set_property, prop))
