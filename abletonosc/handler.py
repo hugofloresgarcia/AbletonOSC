@@ -152,9 +152,8 @@ class AbletonOSCHandler(Component):
         if listener_key in self.listener_functions:
             self.logger.info("Removing listener for %s %s, property %s" % (self.class_identifier, str(params), prop))
             listener_function = self.listener_functions[listener_key]
-            remove_listener_function_name = "remove_%s_listener" % prop
-            remove_listener_function = getattr(target, remove_listener_function_name)
             try:
+                remove_listener_function = getattr(target, "remove_%s_listener" % prop)
                 remove_listener_function(listener_function)
             except Exception as e:
                 #--------------------------------------------------------------------------------
@@ -174,6 +173,15 @@ class AbletonOSCHandler(Component):
         Clears all listener functions, to prevent listeners continuing to report after a reload.
         """
         for listener_key in list(self.listener_functions.keys())[:]:
-            target = self.listener_objects[listener_key]
+            target = self.listener_objects.get(listener_key)
             prop, params = listener_key
+            if target is None:
+                #--------------------------------------------------------------------------------
+                # Listeners added through custom mechanisms (without a recorded target)
+                # can't be detached generically; drop the bookkeeping rather than crash,
+                # as a failed clear_api would leave the whole API uninitialised.
+                #--------------------------------------------------------------------------------
+                self.logger.warning("No listener target recorded for %s %s; discarding" % (prop, str(params)))
+                del self.listener_functions[listener_key]
+                continue
             self._stop_listen(target, prop, params)

@@ -6,6 +6,23 @@ class DeviceHandler(AbletonOSCHandler):
         super().__init__(manager)
         self.class_identifier = "device"
 
+    def clear_api(self):
+        #--------------------------------------------------------------------------------
+        # Parameter value listeners use a custom add/remove mechanism, so detach
+        # them here before the generic listener cleanup runs.
+        #--------------------------------------------------------------------------------
+        for listener_key in list(self.listener_functions.keys()):
+            prop, params = listener_key
+            if prop == 'device_parameter_value':
+                listener_function = self.listener_functions.pop(listener_key)
+                parameter = self.listener_objects.pop(listener_key, None)
+                if parameter is not None:
+                    try:
+                        parameter.remove_value_listener(listener_function)
+                    except Exception as e:
+                        self.logger.info("Exception whilst removing listener (likely benign): %s" % e)
+        super().clear_api()
+
     def init_api(self):
         def canonical_spec(spec):
             #--------------------------------------------------------------------------------
@@ -58,6 +75,44 @@ class DeviceHandler(AbletonOSCHandler):
         for prop in properties_rw:
             self.osc_server.add_handler("/live/device/set/%s" % prop,
                                         create_device_callback(self._set_property, prop))
+
+        #--------------------------------------------------------------------------------
+        # Device: View properties.
+        # is_collapsed lives on device.view; it reflects (and sets) the device's
+        # folded state in Live's device chain, and is observable.
+        #--------------------------------------------------------------------------------
+        def device_get_is_collapsed(device, params: Tuple[Any] = ()):
+            return int(device.view.is_collapsed),
+
+        def device_set_is_collapsed(device, params: Tuple[Any] = ()):
+            device.view.is_collapsed = bool(params[0])
+
+        def device_start_listen_is_collapsed(device, params: Tuple[Any] = ()):
+            self._start_listen(device.view, "is_collapsed", params)
+
+        def device_stop_listen_is_collapsed(device, params: Tuple[Any] = ()):
+            self._stop_listen(device.view, "is_collapsed", params)
+
+        self.osc_server.add_handler("/live/device/get/is_collapsed", create_device_callback(device_get_is_collapsed))
+        self.osc_server.add_handler("/live/device/set/is_collapsed", create_device_callback(device_set_is_collapsed))
+        self.osc_server.add_handler("/live/device/start_listen/is_collapsed", create_device_callback(device_start_listen_is_collapsed, include_ids=True))
+        self.osc_server.add_handler("/live/device/stop_listen/is_collapsed", create_device_callback(device_stop_listen_is_collapsed, include_ids=True))
+
+        #--------------------------------------------------------------------------------
+        # Device: Visible macro count (rack devices only; racks show 1-16 macros).
+        #--------------------------------------------------------------------------------
+        def device_get_visible_macro_count(device, params: Tuple[Any] = ()):
+            return (device.visible_macro_count if device.can_have_chains else 0),
+
+        def device_start_listen_visible_macro_count(device, params: Tuple[Any] = ()):
+            self._start_listen(device, "visible_macro_count", params)
+
+        def device_stop_listen_visible_macro_count(device, params: Tuple[Any] = ()):
+            self._stop_listen(device, "visible_macro_count", params)
+
+        self.osc_server.add_handler("/live/device/get/visible_macro_count", create_device_callback(device_get_visible_macro_count))
+        self.osc_server.add_handler("/live/device/start_listen/visible_macro_count", create_device_callback(device_start_listen_visible_macro_count, include_ids=True))
+        self.osc_server.add_handler("/live/device/stop_listen/visible_macro_count", create_device_callback(device_stop_listen_visible_macro_count, include_ids=True))
 
         #--------------------------------------------------------------------------------
         # Device: Enumerate rack chains
@@ -149,8 +204,9 @@ class DeviceHandler(AbletonOSCHandler):
                device_get_parameter_remove_value_listener(device, params)
 
             self.logger.info("Adding listener for %s %s, property: %s" % ('device parameter', str(params), 'value'))
-            device.parameters[params[2]].add_value_listener(property_changed_callback)
+            device.parameters[param_index].add_value_listener(property_changed_callback)
             self.listener_functions[listener_key] = property_changed_callback
+            self.listener_objects[listener_key] = device.parameters[param_index]
 
             property_changed_callback()
 
@@ -161,6 +217,7 @@ class DeviceHandler(AbletonOSCHandler):
                 listener_function = self.listener_functions[listener_key]
                 device.parameters[int(params[2])].remove_value_listener(listener_function)
                 del self.listener_functions[listener_key]
+                self.listener_objects.pop(listener_key, None)
             else:
                 self.logger.warning("No listener function found for device parameter value (%s)" % (str(params),))
 

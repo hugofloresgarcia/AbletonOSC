@@ -1,0 +1,730 @@
+(2026-10-10 19:42:07,049) [INFO] Started AbletonOSC on address ('0.0.0.0', 11000)
+(2026-10-10 19:42:40,483) [INFO] Reloading abletonosc...
+(2026-10-10 19:42:40,485) [INFO] Reloaded code
+(2026-10-10 19:42:40,782) [INFO] Getting property for device: name = chivo-gtr
+(2026-10-10 19:42:40,891) [INFO] Getting property for device: name = chivo-gtr
+(2026-10-10 19:42:41,892) [INFO] Getting property for chain: name = Wet
+(2026-10-10 19:42:41,992) [INFO] Getting property for chain: color = 8912743
+(2026-10-10 19:42:42,592) [INFO] Getting property for device: name = freeze
+(2026-10-10 19:42:42,991) [INFO] Adding listener for track (0,), property: devices
+(2026-10-10 19:42:42,992) [INFO] Property devices changed of track (0,)
+(2026-10-10 19:42:43,092) [INFO] Removing listener for track (0,), property devices
+(2026-10-10 19:43:04,032) [INFO] Reloading abletonosc...
+(2026-10-10 19:43:04,034) [INFO] Reloaded code
+(2026-10-10 19:43:10,674) [INFO] Adding listener for view [], property: selected_track
+(2026-10-10 19:43:10,674) [INFO] Property selected_track changed of view []: (3,)
+(2026-10-10 19:43:10,674) [INFO] Getting property for track: name = Batería Cabeza De Chivo at Thalia Hall Chicago IL 06⧸05⧸2026 [trqgfvZ1Z_c]
+(2026-10-10 19:43:10,674) [INFO] Getting property for track: color = 1698303
+(2026-10-10 19:43:10,675) [INFO] Adding listener for track (3,), property: devices
+(2026-10-10 19:43:10,675) [INFO] Property devices changed of track (3,)
+(2026-10-10 19:43:10,774) [INFO] Adding listener for device parameter [3, '0', 0], property: value
+(2026-10-10 19:43:10,774) [INFO] Property value changed of device parameter [3, '0', 0]: 1.0
+(2026-10-10 19:43:10,774) [INFO] Property value_string changed of device parameter [3, '0', 0]: On
+(2026-10-10 19:43:10,774) [INFO] Adding listener for device parameter [3, '0', 1], property: value
+(2026-10-10 19:43:10,774) [INFO] Property value changed of device parameter [3, '0', 1]: 0.0
+(2026-10-10 19:43:10,774) [INFO] Property value_string changed of device parameter [3, '0', 1]: 0.00 dB
+(2026-10-10 19:43:10,774) [INFO] Adding listener for device parameter [3, '0', 2], property: value
+(2026-10-10 19:43:10,775) [INFO] Property value changed of device parameter [3, '0', 2]: 1.0
+(2026-10-10 19:43:10,775) [INFO] Property value_string changed of device parameter [3, '0', 2]: 100 %
+(2026-10-10 19:43:10,775) [INFO] Adding listener for device parameter [3, '0', 3], property: value
+(2026-10-10 19:43:10,775) [INFO] Property value changed of device parameter [3, '0', 3]: 1.0
+(2026-10-10 19:43:10,775) [INFO] Property value_string changed of device parameter [3, '0', 3]: On
+(2026-10-10 19:43:10,775) [INFO] Adding listener for device parameter [3, '0', 4], property: value
+(2026-10-10 19:43:10,775) [INFO] Property value changed of device parameter [3, '0', 4]: 1.0
+(2026-10-10 19:43:10,775) [INFO] Property value_string changed of device parameter [3, '0', 4]: On
+(2026-10-10 19:43:10,776) [INFO] Adding listener for device parameter [3, '0', 5], property: value
+(2026-10-10 19:43:10,776) [INFO] Property value changed of device parameter [3, '0', 5]: 2.0
+(2026-10-10 19:43:10,776) [INFO] Property value_string changed of device parameter [3, '0', 5]: Low Shelf
+(2026-10-10 19:43:10,776) [INFO] Adding listener for device parameter [3, '0', 6], property: value
+(2026-10-10 19:43:10,776) [INFO] Property value changed of device parameter [3, '0', 6]: 0.31024929881095886
+(2026-10-10 19:43:10,776) [INFO] Property value_string changed of device parameter [3, '0', 6]: 109 Hz
+(2026-10-10 19:43:10,777) [INFO] Adding listener for device parameter [3, '0', 7], property: value
+(2026-10-10 19:43:10,777) [INFO] Property value changed of device parameter [3, '0', 7]: -4.338842868804932
+(2026-10-10 19:43:10,777) [INFO] Property value_string changed of device parameter [3, '0', 7]: -4.34 dB
+(2026-10-10 19:43:10,777) [INFO] Adding listener for device parameter [3, '0', 8], property: value
+(2026-10-10 19:43:10,777) [INFO] Property value changed of device parameter [3, '0', 8]: 0.37666621804237366
+(2026-10-10 19:43:10,777) [INFO] Property value_string changed of device parameter [3, '0', 8]: 0.71
+(2026-10-10 19:43:54,855) [INFO] Property selected_track changed of view []: (0,)
+(2026-10-10 19:43:54,919) [INFO] Removing listener for device [3, '0', 0], property value
+(2026-10-10 19:43:54,919) [INFO] Removing listener for device [3, '0', 1], property value
+(2026-10-10 19:43:54,919) [INFO] Removing listener for device [3, '0', 2], property value
+(2026-10-10 19:43:54,919) [INFO] Removing listener for device [3, '0', 3], property value
+(2026-10-10 19:43:54,919) [INFO] Removing listener for device [3, '0', 4], property value
+(2026-10-10 19:43:54,919) [INFO] Removing listener for device [3, '0', 5], property value
+(2026-10-10 19:43:54,919) [INFO] Removing listener for device [3, '0', 6], property value
+(2026-10-10 19:43:54,920) [INFO] Removing listener for device [3, '0', 7], property value
+(2026-10-10 19:43:54,920) [INFO] Removing listener for device [3, '0', 8], property value
+(2026-10-10 19:43:54,920) [INFO] Removing listener for track (3,), property devices
+(2026-10-10 19:43:54,920) [INFO] Getting property for track: name = gtr
+(2026-10-10 19:43:54,920) [INFO] Getting property for track: color = 8912743
+(2026-10-10 19:43:54,920) [INFO] Adding listener for track (0,), property: devices
+(2026-10-10 19:43:54,920) [INFO] Property devices changed of track (0,)
+(2026-10-10 19:43:55,020) [INFO] Adding listener for device parameter [0, '0', 0], property: value
+(2026-10-10 19:43:55,020) [INFO] Property value changed of device parameter [0, '0', 0]: 1.0
+(2026-10-10 19:43:55,020) [INFO] Property value_string changed of device parameter [0, '0', 0]: On
+(2026-10-10 19:43:55,021) [INFO] Adding listener for device parameter [0, '0', 1], property: value
+(2026-10-10 19:43:55,021) [INFO] Property value changed of device parameter [0, '0', 1]: 100.41015625
+(2026-10-10 19:43:55,021) [INFO] Property value_string changed of device parameter [0, '0', 1]: 9.14 Hz
+(2026-10-10 19:43:55,021) [INFO] Adding listener for device parameter [0, '0', 2], property: value
+(2026-10-10 19:43:55,021) [INFO] Property value changed of device parameter [0, '0', 2]: 34.0
+(2026-10-10 19:43:55,021) [INFO] Property value_string changed of device parameter [0, '0', 2]: 0.01
+(2026-10-10 19:43:55,021) [INFO] Adding listener for device parameter [0, '0', 3], property: value
+(2026-10-10 19:43:55,021) [INFO] Property value changed of device parameter [0, '0', 3]: 56.74205780029297
+(2026-10-10 19:43:55,022) [INFO] Property value_string changed of device parameter [0, '0', 3]: 90.0 ms
+(2026-10-10 19:43:55,022) [INFO] Adding listener for device parameter [0, '0', 4], property: value
+(2026-10-10 19:43:55,022) [INFO] Property value changed of device parameter [0, '0', 4]: 94.74603271484375
+(2026-10-10 19:43:55,022) [INFO] Property value_string changed of device parameter [0, '0', 4]: 71 %
+(2026-10-10 19:43:55,022) [INFO] Adding listener for device parameter [0, '0', 5], property: value
+(2026-10-10 19:43:55,022) [INFO] Property value changed of device parameter [0, '0', 5]: 73.62948608398438
+(2026-10-10 19:43:55,022) [INFO] Property value_string changed of device parameter [0, '0', 5]: 328 ms
+(2026-10-10 19:43:55,022) [INFO] Adding listener for device parameter [0, '0', 6], property: value
+(2026-10-10 19:43:55,022) [INFO] Property value changed of device parameter [0, '0', 6]: 111.0703125
+(2026-10-10 19:43:55,022) [INFO] Property value_string changed of device parameter [0, '0', 6]: 83 %
+(2026-10-10 19:43:55,023) [INFO] Adding listener for device parameter [0, '0', 7], property: value
+(2026-10-10 19:43:55,023) [INFO] Property value changed of device parameter [0, '0', 7]: 84.20000457763672
+(2026-10-10 19:43:55,023) [INFO] Property value_string changed of device parameter [0, '0', 7]: 0.66
+(2026-10-10 19:43:55,023) [INFO] Adding listener for device parameter [0, '0', 8], property: value
+(2026-10-10 19:43:55,023) [INFO] Property value changed of device parameter [0, '0', 8]: 58.42000198364258
+(2026-10-10 19:43:55,023) [INFO] Property value_string changed of device parameter [0, '0', 8]: 46 %
+(2026-10-10 19:47:21,672) [INFO] Disconnecting...
+(2026-10-10 19:47:23,383) [INFO] Started AbletonOSC on address ('0.0.0.0', 11000)
+(2026-10-10 19:48:20,452) [INFO] Reloading abletonosc...
+(2026-10-10 19:48:20,454) [INFO] Reloaded code
+(2026-10-10 19:48:49,445) [INFO] Disconnecting...
+(2026-10-10 19:48:51,228) [INFO] Started AbletonOSC on address ('0.0.0.0', 11000)
+(2026-10-10 19:49:10,578) [INFO] Adding listener for view [], property: selected_track
+(2026-10-10 19:49:10,578) [INFO] Property selected_track changed of view []: (0,)
+(2026-10-10 19:49:10,579) [INFO] Getting property for track: name = gtr
+(2026-10-10 19:49:10,579) [INFO] Getting property for track: color = 8912743
+(2026-10-10 19:49:10,579) [INFO] Adding listener for track (0,), property: devices
+(2026-10-10 19:49:10,579) [INFO] Property devices changed of track (0,)
+(2026-10-10 19:49:10,580) [INFO] Adding listener for device parameter [0, '0', 0], property: value
+(2026-10-10 19:49:10,580) [INFO] Property value changed of device parameter [0, '0', 0]: 1.0
+(2026-10-10 19:49:10,580) [INFO] Property value_string changed of device parameter [0, '0', 0]: On
+(2026-10-10 19:49:10,580) [INFO] Adding listener for device parameter [0, '0', 1], property: value
+(2026-10-10 19:49:10,580) [INFO] Property value changed of device parameter [0, '0', 1]: 100.41015625
+(2026-10-10 19:49:10,580) [INFO] Property value_string changed of device parameter [0, '0', 1]: 9.14 Hz
+(2026-10-10 19:49:10,580) [INFO] Adding listener for device parameter [0, '0', 2], property: value
+(2026-10-10 19:49:10,580) [INFO] Property value changed of device parameter [0, '0', 2]: 34.0
+(2026-10-10 19:49:10,580) [INFO] Property value_string changed of device parameter [0, '0', 2]: 0.01
+(2026-10-10 19:49:10,580) [INFO] Adding listener for device parameter [0, '0', 3], property: value
+(2026-10-10 19:49:10,580) [INFO] Property value changed of device parameter [0, '0', 3]: 56.74205780029297
+(2026-10-10 19:49:10,581) [INFO] Property value_string changed of device parameter [0, '0', 3]: 90.0 ms
+(2026-10-10 19:49:10,581) [INFO] Adding listener for device parameter [0, '0', 4], property: value
+(2026-10-10 19:49:10,581) [INFO] Property value changed of device parameter [0, '0', 4]: 94.74603271484375
+(2026-10-10 19:49:10,581) [INFO] Property value_string changed of device parameter [0, '0', 4]: 71 %
+(2026-10-10 19:49:10,581) [INFO] Adding listener for device parameter [0, '0', 5], property: value
+(2026-10-10 19:49:10,581) [INFO] Property value changed of device parameter [0, '0', 5]: 73.62948608398438
+(2026-10-10 19:49:10,581) [INFO] Property value_string changed of device parameter [0, '0', 5]: 328 ms
+(2026-10-10 19:49:10,581) [INFO] Adding listener for device parameter [0, '0', 6], property: value
+(2026-10-10 19:49:10,581) [INFO] Property value changed of device parameter [0, '0', 6]: 111.0703125
+(2026-10-10 19:49:10,581) [INFO] Property value_string changed of device parameter [0, '0', 6]: 83 %
+(2026-10-10 19:49:10,582) [INFO] Adding listener for device parameter [0, '0', 7], property: value
+(2026-10-10 19:49:10,582) [INFO] Property value changed of device parameter [0, '0', 7]: 84.20000457763672
+(2026-10-10 19:49:10,582) [INFO] Property value_string changed of device parameter [0, '0', 7]: 0.66
+(2026-10-10 19:49:10,582) [INFO] Adding listener for device parameter [0, '0', 8], property: value
+(2026-10-10 19:49:10,582) [INFO] Property value changed of device parameter [0, '0', 8]: 58.42000198364258
+(2026-10-10 19:49:10,582) [INFO] Property value_string changed of device parameter [0, '0', 8]: 46 %
+(2026-10-10 19:49:10,779) [INFO] Adding listener for device parameter [0, '0.0.0', 0], property: value
+(2026-10-10 19:49:10,779) [INFO] Property value changed of device parameter [0, '0.0.0', 0]: 1.0
+(2026-10-10 19:49:10,779) [INFO] Property value_string changed of device parameter [0, '0.0.0', 0]: On
+(2026-10-10 19:49:10,780) [INFO] Adding listener for device parameter [0, '0.0.0', 1], property: value
+(2026-10-10 19:49:10,780) [INFO] Property value changed of device parameter [0, '0.0.0', 1]: 1.0
+(2026-10-10 19:49:10,780) [INFO] Property value_string changed of device parameter [0, '0.0.0', 1]: On
+(2026-10-10 19:49:10,780) [INFO] Adding listener for device parameter [0, '0.0.0', 2], property: value
+(2026-10-10 19:49:10,780) [INFO] Property value changed of device parameter [0, '0.0.0', 2]: 0.0
+(2026-10-10 19:49:10,780) [INFO] Property value_string changed of device parameter [0, '0.0.0', 2]: Off
+(2026-10-10 19:49:10,780) [INFO] Adding listener for device parameter [0, '0.0.0', 3], property: value
+(2026-10-10 19:49:10,780) [INFO] Property value changed of device parameter [0, '0.0.0', 3]: 0.0
+(2026-10-10 19:49:10,781) [INFO] Property value_string changed of device parameter [0, '0.0.0', 3]: Milliseconds
+(2026-10-10 19:49:10,781) [INFO] Adding listener for device parameter [0, '0.0.0', 4], property: value
+(2026-10-10 19:49:10,781) [INFO] Property value changed of device parameter [0, '0.0.0', 4]: 6.0
+(2026-10-10 19:49:10,781) [INFO] Property value_string changed of device parameter [0, '0.0.0', 4]: 1/8
+(2026-10-10 19:49:10,781) [INFO] Adding listener for device parameter [0, '0.0.0', 5], property: value
+(2026-10-10 19:49:10,781) [INFO] Property value changed of device parameter [0, '0.0.0', 5]: 0.36366671323776245
+(2026-10-10 19:49:10,781) [INFO] Property value_string changed of device parameter [0, '0.0.0', 5]: 500 ms
+(2026-10-10 19:49:10,781) [INFO] Adding listener for device parameter [0, '0.0.0', 6], property: value
+(2026-10-10 19:49:10,782) [INFO] Property value changed of device parameter [0, '0.0.0', 6]: 0.0
+(2026-10-10 19:49:10,782) [INFO] Property value_string changed of device parameter [0, '0.0.0', 6]: Manual
+(2026-10-10 19:49:10,782) [INFO] Adding listener for device parameter [0, '0.0.0', 7], property: value
+(2026-10-10 19:49:10,782) [INFO] Property value changed of device parameter [0, '0.0.0', 7]: 0.0
+(2026-10-10 19:49:10,782) [INFO] Property value_string changed of device parameter [0, '0.0.0', 7]: Onsets
+(2026-10-10 19:49:10,782) [INFO] Adding listener for device parameter [0, '0.0.0', 8], property: value
+(2026-10-10 19:49:10,782) [INFO] Property value changed of device parameter [0, '0.0.0', 8]: 0.0
+(2026-10-10 19:49:10,782) [INFO] Property value_string changed of device parameter [0, '0.0.0', 8]: Crossfade
+(2026-10-10 19:49:10,782) [INFO] Adding listener for device parameter [0, '0.0.1', 0], property: value
+(2026-10-10 19:49:10,782) [INFO] Property value changed of device parameter [0, '0.0.1', 0]: 0.0
+(2026-10-10 19:49:10,783) [INFO] Property value_string changed of device parameter [0, '0.0.1', 0]: Off
+(2026-10-10 19:49:10,783) [INFO] Adding listener for device parameter [0, '0.0.1', 1], property: value
+(2026-10-10 19:49:10,783) [INFO] Property value changed of device parameter [0, '0.0.1', 1]: 44.0
+(2026-10-10 19:49:10,783) [INFO] Property value_string changed of device parameter [0, '0.0.1', 1]: 1.19 kHz
+(2026-10-10 19:49:10,783) [INFO] Adding listener for device parameter [0, '0.0.1', 2], property: value
+(2026-10-10 19:49:10,783) [INFO] Property value changed of device parameter [0, '0.0.1', 2]: 11.90625
+(2026-10-10 19:49:10,783) [INFO] Property value_string changed of device parameter [0, '0.0.1', 2]: 2 
+(2026-10-10 19:49:10,783) [INFO] Adding listener for device parameter [0, '0.0.1', 3], property: value
+(2026-10-10 19:49:10,783) [INFO] Property value changed of device parameter [0, '0.0.1', 3]: 127.0
+(2026-10-10 19:49:10,783) [INFO] Property value_string changed of device parameter [0, '0.0.1', 3]: 4.00 
+(2026-10-10 19:49:10,784) [INFO] Adding listener for device parameter [0, '0.0.1', 4], property: value
+(2026-10-10 19:49:10,784) [INFO] Property value changed of device parameter [0, '0.0.1', 4]: 21.0
+(2026-10-10 19:49:10,784) [INFO] Property value_string changed of device parameter [0, '0.0.1', 4]: 16.5 %
+(2026-10-10 19:49:10,784) [INFO] Adding listener for device parameter [0, '0.0.1', 5], property: value
+(2026-10-10 19:49:10,784) [INFO] Property value changed of device parameter [0, '0.0.1', 5]: 20.0
+(2026-10-10 19:49:10,784) [INFO] Property value_string changed of device parameter [0, '0.0.1', 5]: 15.7 %
+(2026-10-10 19:49:10,784) [INFO] Adding listener for device parameter [0, '0.0.1', 6], property: value
+(2026-10-10 19:49:10,785) [INFO] Property value changed of device parameter [0, '0.0.1', 6]: 44.173912048339844
+(2026-10-10 19:49:10,785) [INFO] Property value_string changed of device parameter [0, '0.0.1', 6]: 44
+(2026-10-10 19:49:10,785) [INFO] Adding listener for device parameter [0, '0.0.1', 7], property: value
+(2026-10-10 19:49:10,785) [INFO] Property value changed of device parameter [0, '0.0.1', 7]: 0.0
+(2026-10-10 19:49:10,785) [INFO] Property value_string changed of device parameter [0, '0.0.1', 7]: 0
+(2026-10-10 19:49:10,785) [INFO] Adding listener for device parameter [0, '0.0.1', 8], property: value
+(2026-10-10 19:49:10,785) [INFO] Property value changed of device parameter [0, '0.0.1', 8]: 127.0
+(2026-10-10 19:49:10,786) [INFO] Property value_string changed of device parameter [0, '0.0.1', 8]: 100 %
+(2026-10-10 19:49:10,786) [INFO] Adding listener for device parameter [0, '0.0.2', 0], property: value
+(2026-10-10 19:49:10,787) [INFO] Property value changed of device parameter [0, '0.0.2', 0]: 1.0
+(2026-10-10 19:49:10,787) [INFO] Property value_string changed of device parameter [0, '0.0.2', 0]: On
+(2026-10-10 19:49:10,787) [INFO] Adding listener for device parameter [0, '0.0.2', 1], property: value
+(2026-10-10 19:49:10,787) [INFO] Property value changed of device parameter [0, '0.0.2', 1]: 0.0
+(2026-10-10 19:49:10,787) [INFO] Property value_string changed of device parameter [0, '0.0.2', 1]: 0
+(2026-10-10 19:49:10,787) [INFO] Adding listener for device parameter [0, '0.0.2', 2], property: value
+(2026-10-10 19:49:10,788) [INFO] Property value changed of device parameter [0, '0.0.2', 2]: 0.5748031735420227
+(2026-10-10 19:49:10,788) [INFO] Property value_string changed of device parameter [0, '0.0.2', 2]: 0.57
+(2026-10-10 19:49:10,788) [INFO] Adding listener for device parameter [0, '0.0.2', 3], property: value
+(2026-10-10 19:49:10,788) [INFO] Property value changed of device parameter [0, '0.0.2', 3]: 0.0
+(2026-10-10 19:49:10,788) [INFO] Property value_string changed of device parameter [0, '0.0.2', 3]: 0
+(2026-10-10 19:49:10,788) [INFO] Adding listener for device parameter [0, '0.0.2', 4], property: value
+(2026-10-10 19:49:10,788) [INFO] Property value changed of device parameter [0, '0.0.2', 4]: 90.0
+(2026-10-10 19:49:10,788) [INFO] Property value_string changed of device parameter [0, '0.0.2', 4]: 90.0 ms
+(2026-10-10 19:49:10,789) [INFO] Adding listener for device parameter [0, '0.0.2', 5], property: value
+(2026-10-10 19:49:10,789) [INFO] Property value changed of device parameter [0, '0.0.2', 5]: 1.0
+(2026-10-10 19:49:10,789) [INFO] Property value_string changed of device parameter [0, '0.0.2', 5]: 1.00
+(2026-10-10 19:49:10,789) [INFO] Adding listener for device parameter [0, '0.0.2', 6], property: value
+(2026-10-10 19:49:10,789) [INFO] Property value changed of device parameter [0, '0.0.2', 6]: 1.0
+(2026-10-10 19:49:10,789) [INFO] Property value_string changed of device parameter [0, '0.0.2', 6]: 1.00
+(2026-10-10 19:49:10,789) [INFO] Adding listener for device parameter [0, '0.0.2', 7], property: value
+(2026-10-10 19:49:10,789) [INFO] Property value changed of device parameter [0, '0.0.2', 7]: 0.0
+(2026-10-10 19:49:10,789) [INFO] Property value_string changed of device parameter [0, '0.0.2', 7]: 0
+(2026-10-10 19:49:10,789) [INFO] Adding listener for device parameter [0, '0.0.2', 8], property: value
+(2026-10-10 19:49:10,789) [INFO] Property value changed of device parameter [0, '0.0.2', 8]: 2.0
+(2026-10-10 19:49:10,789) [INFO] Property value_string changed of device parameter [0, '0.0.2', 8]: octaves
+(2026-10-10 19:49:10,790) [INFO] Adding listener for device parameter [0, '0.0.3', 0], property: value
+(2026-10-10 19:49:10,790) [INFO] Property value changed of device parameter [0, '0.0.3', 0]: 1.0
+(2026-10-10 19:49:10,790) [INFO] Property value_string changed of device parameter [0, '0.0.3', 0]: On
+(2026-10-10 19:49:10,790) [INFO] Adding listener for device parameter [0, '0.0.3', 1], property: value
+(2026-10-10 19:49:10,790) [INFO] Property value changed of device parameter [0, '0.0.3', 1]: -6.571428298950195
+(2026-10-10 19:49:10,790) [INFO] Property value_string changed of device parameter [0, '0.0.3', 1]: -6.57 dB
+(2026-10-10 19:49:10,790) [INFO] Adding listener for device parameter [0, '0.0.3', 2], property: value
+(2026-10-10 19:49:10,790) [INFO] Property value changed of device parameter [0, '0.0.3', 2]: 70.0
+(2026-10-10 19:49:10,790) [INFO] Property value_string changed of device parameter [0, '0.0.3', 2]: 70.0 dB
+(2026-10-10 19:49:10,791) [INFO] Adding listener for device parameter [0, '0.0.3', 3], property: value
+(2026-10-10 19:49:10,791) [INFO] Property value changed of device parameter [0, '0.0.3', 3]: 0.0
+(2026-10-10 19:49:10,791) [INFO] Property value_string changed of device parameter [0, '0.0.3', 3]: 0.00 dB
+(2026-10-10 19:49:10,791) [INFO] Adding listener for device parameter [0, '0.0.3', 4], property: value
+(2026-10-10 19:49:10,791) [INFO] Property value changed of device parameter [0, '0.0.3', 4]: 3.0
+(2026-10-10 19:49:10,791) [INFO] Property value_string changed of device parameter [0, '0.0.3', 4]: 1
+(2026-10-10 19:49:10,791) [INFO] Adding listener for device parameter [0, '0.0.3', 5], property: value
+(2026-10-10 19:49:10,791) [INFO] Property value changed of device parameter [0, '0.0.3', 5]: 1.0
+(2026-10-10 19:49:10,791) [INFO] Property value_string changed of device parameter [0, '0.0.3', 5]: 4
+(2026-10-10 19:49:10,792) [INFO] Adding listener for device parameter [0, '0.0.3', 6], property: value
+(2026-10-10 19:49:10,792) [INFO] Property value changed of device parameter [0, '0.0.3', 6]: 1.0
+(2026-10-10 19:49:10,792) [INFO] Property value_string changed of device parameter [0, '0.0.3', 6]: .2
+(2026-10-10 19:49:10,792) [INFO] Adding listener for device parameter [0, '0.0.3', 7], property: value
+(2026-10-10 19:49:10,792) [INFO] Property value changed of device parameter [0, '0.0.3', 7]: 1.0
+(2026-10-10 19:49:10,792) [INFO] Property value_string changed of device parameter [0, '0.0.3', 7]: 100 %
+(2026-10-10 19:49:10,792) [INFO] Adding listener for device parameter [0, '0.0.3', 8], property: value
+(2026-10-10 19:49:10,792) [INFO] Property value changed of device parameter [0, '0.0.3', 8]: 1.0
+(2026-10-10 19:49:10,792) [INFO] Property value_string changed of device parameter [0, '0.0.3', 8]: On
+(2026-10-10 19:49:10,793) [INFO] Adding listener for device parameter [0, '0.0.4', 0], property: value
+(2026-10-10 19:49:10,793) [INFO] Property value changed of device parameter [0, '0.0.4', 0]: 0.0
+(2026-10-10 19:49:10,793) [INFO] Property value_string changed of device parameter [0, '0.0.4', 0]: Off
+(2026-10-10 19:49:10,793) [INFO] Adding listener for device parameter [0, '0.0.4', 1], property: value
+(2026-10-10 19:49:10,793) [INFO] Property value changed of device parameter [0, '0.0.4', 1]: 0.9133999943733215
+(2026-10-10 19:49:10,794) [INFO] Property value_string changed of device parameter [0, '0.0.4', 1]: 0.91
+(2026-10-10 19:49:10,794) [INFO] Adding listener for device parameter [0, '0.0.4', 2], property: value
+(2026-10-10 19:49:10,794) [INFO] Property value changed of device parameter [0, '0.0.4', 2]: 0.7628359198570251
+(2026-10-10 19:49:10,794) [INFO] Property value_string changed of device parameter [0, '0.0.4', 2]: 0.76
+(2026-10-10 19:49:10,794) [INFO] Adding listener for device parameter [0, '0.0.4', 3], property: value
+(2026-10-10 19:49:10,794) [INFO] Property value changed of device parameter [0, '0.0.4', 3]: 0.25999999046325684
+(2026-10-10 19:49:10,794) [INFO] Property value_string changed of device parameter [0, '0.0.4', 3]: 0.26
+(2026-10-10 19:49:10,795) [INFO] Adding listener for device parameter [0, '0.0.5', 0], property: value
+(2026-10-10 19:49:10,795) [INFO] Property value changed of device parameter [0, '0.0.5', 0]: 0.0
+(2026-10-10 19:49:10,795) [INFO] Property value_string changed of device parameter [0, '0.0.5', 0]: Off
+(2026-10-10 19:49:10,795) [INFO] Adding listener for device parameter [0, '0.0.5', 1], property: value
+(2026-10-10 19:49:10,795) [INFO] Property value changed of device parameter [0, '0.0.5', 1]: 0.0
+(2026-10-10 19:49:10,795) [INFO] Property value_string changed of device parameter [0, '0.0.5', 1]: Off
+(2026-10-10 19:49:10,796) [INFO] Adding listener for device parameter [0, '0.0.5', 2], property: value
+(2026-10-10 19:49:10,796) [INFO] Property value changed of device parameter [0, '0.0.5', 2]: 0.0
+(2026-10-10 19:49:10,796) [INFO] Property value_string changed of device parameter [0, '0.0.5', 2]: Off
+(2026-10-10 19:49:10,796) [INFO] Adding listener for device parameter [0, '0.0.5', 3], property: value
+(2026-10-10 19:49:10,796) [INFO] Property value changed of device parameter [0, '0.0.5', 3]: 1.0
+(2026-10-10 19:49:10,796) [INFO] Property value_string changed of device parameter [0, '0.0.5', 3]: Stereo
+(2026-10-10 19:49:10,796) [INFO] Adding listener for device parameter [0, '0.0.5', 4], property: value
+(2026-10-10 19:49:10,796) [INFO] Property value changed of device parameter [0, '0.0.5', 4]: 1.0
+(2026-10-10 19:49:10,796) [INFO] Property value_string changed of device parameter [0, '0.0.5', 4]: 100 %
+(2026-10-10 19:49:10,796) [INFO] Adding listener for device parameter [0, '0.0.5', 5], property: value
+(2026-10-10 19:49:10,796) [INFO] Property value changed of device parameter [0, '0.0.5', 5]: 0.0
+(2026-10-10 19:49:10,797) [INFO] Property value_string changed of device parameter [0, '0.0.5', 5]: Off
+(2026-10-10 19:49:10,797) [INFO] Adding listener for device parameter [0, '0.0.5', 6], property: value
+(2026-10-10 19:49:10,797) [INFO] Property value changed of device parameter [0, '0.0.5', 6]: 0.0
+(2026-10-10 19:49:10,797) [INFO] Property value_string changed of device parameter [0, '0.0.5', 6]: Off
+(2026-10-10 19:49:10,797) [INFO] Adding listener for device parameter [0, '0.0.5', 7], property: value
+(2026-10-10 19:49:10,797) [INFO] Property value changed of device parameter [0, '0.0.5', 7]: 0.3802112340927124
+(2026-10-10 19:49:10,797) [INFO] Property value_string changed of device parameter [0, '0.0.5', 7]: 120 Hz
+(2026-10-10 19:49:10,797) [INFO] Adding listener for device parameter [0, '0.0.5', 8], property: value
+(2026-10-10 19:49:10,797) [INFO] Property value changed of device parameter [0, '0.0.5', 8]: 0.0
+(2026-10-10 19:49:10,797) [INFO] Property value_string changed of device parameter [0, '0.0.5', 8]: C
+(2026-10-10 19:49:10,798) [INFO] Adding listener for device parameter [0, '0.0.6', 0], property: value
+(2026-10-10 19:49:10,798) [INFO] Property value changed of device parameter [0, '0.0.6', 0]: 0.0
+(2026-10-10 19:49:10,798) [INFO] Property value_string changed of device parameter [0, '0.0.6', 0]: Off
+(2026-10-10 19:49:10,798) [INFO] Adding listener for device parameter [0, '0.0.6', 1], property: value
+(2026-10-10 19:49:10,798) [INFO] Property value changed of device parameter [0, '0.0.6', 1]: 0.6700000166893005
+(2026-10-10 19:49:10,798) [INFO] Property value_string changed of device parameter [0, '0.0.6', 1]: 0.67
+(2026-10-10 19:49:10,798) [INFO] Adding listener for device parameter [0, '0.0.6', 2], property: value
+(2026-10-10 19:49:10,798) [INFO] Property value changed of device parameter [0, '0.0.6', 2]: 1.0
+(2026-10-10 19:49:10,798) [INFO] Property value_string changed of device parameter [0, '0.0.6', 2]: 1.00
+(2026-10-10 19:49:10,798) [INFO] Adding listener for device parameter [0, '0.0.6', 3], property: value
+(2026-10-10 19:49:10,798) [INFO] Property value changed of device parameter [0, '0.0.6', 3]: 0.960629940032959
+(2026-10-10 19:49:10,799) [INFO] Property value_string changed of device parameter [0, '0.0.6', 3]: 0.96
+(2026-10-10 19:49:10,799) [INFO] Adding listener for device parameter [0, '0.0.7', 0], property: value
+(2026-10-10 19:49:10,799) [INFO] Property value changed of device parameter [0, '0.0.7', 0]: 1.0
+(2026-10-10 19:49:10,799) [INFO] Property value_string changed of device parameter [0, '0.0.7', 0]: On
+(2026-10-10 19:49:10,799) [INFO] Adding listener for device parameter [0, '0.0.7', 1], property: value
+(2026-10-10 19:49:10,799) [INFO] Property value changed of device parameter [0, '0.0.7', 1]: 0.0
+(2026-10-10 19:49:10,799) [INFO] Property value_string changed of device parameter [0, '0.0.7', 1]: val1
+(2026-10-10 19:49:10,800) [INFO] Adding listener for device parameter [0, '0.0.7', 2], property: value
+(2026-10-10 19:49:10,800) [INFO] Property value changed of device parameter [0, '0.0.7', 2]: 0.0
+(2026-10-10 19:49:10,800) [INFO] Property value_string changed of device parameter [0, '0.0.7', 2]: val1
+(2026-10-10 19:49:10,800) [INFO] Adding listener for device parameter [0, '0.0.7', 3], property: value
+(2026-10-10 19:49:10,800) [INFO] Property value changed of device parameter [0, '0.0.7', 3]: 2547.19482421875
+(2026-10-10 19:49:10,800) [INFO] Property value_string changed of device parameter [0, '0.0.7', 3]: 220 ms
+(2026-10-10 19:49:10,800) [INFO] Adding listener for device parameter [0, '0.0.7', 4], property: value
+(2026-10-10 19:49:10,800) [INFO] Property value changed of device parameter [0, '0.0.7', 4]: 2547.19482421875
+(2026-10-10 19:49:10,800) [INFO] Property value_string changed of device parameter [0, '0.0.7', 4]: 220 ms
+(2026-10-10 19:49:10,801) [INFO] Adding listener for device parameter [0, '0.0.8', 0], property: value
+(2026-10-10 19:49:10,801) [INFO] Property value changed of device parameter [0, '0.0.8', 0]: 1.0
+(2026-10-10 19:49:10,801) [INFO] Property value_string changed of device parameter [0, '0.0.8', 0]: On
+(2026-10-10 19:49:10,801) [INFO] Adding listener for device parameter [0, '0.0.8', 1], property: value
+(2026-10-10 19:49:10,801) [INFO] Property value changed of device parameter [0, '0.0.8', 1]: 0.46000000834465027
+(2026-10-10 19:49:10,801) [INFO] Property value_string changed of device parameter [0, '0.0.8', 1]: 0.46
+(2026-10-10 19:49:10,801) [INFO] Adding listener for device parameter [0, '0.0.8', 2], property: value
+(2026-10-10 19:49:10,802) [INFO] Property value changed of device parameter [0, '0.0.8', 2]: 0.5699999928474426
+(2026-10-10 19:49:10,802) [INFO] Property value_string changed of device parameter [0, '0.0.8', 2]: 0.57
+(2026-10-10 19:49:10,802) [INFO] Adding listener for device parameter [0, '0.0.8', 3], property: value
+(2026-10-10 19:49:10,802) [INFO] Property value changed of device parameter [0, '0.0.8', 3]: 0.33000001311302185
+(2026-10-10 19:49:10,802) [INFO] Property value_string changed of device parameter [0, '0.0.8', 3]: 0.33
+(2026-10-10 19:49:10,802) [INFO] Adding listener for device parameter [0, '0.0.8', 4], property: value
+(2026-10-10 19:49:10,802) [INFO] Property value changed of device parameter [0, '0.0.8', 4]: 1.0
+(2026-10-10 19:49:10,802) [INFO] Property value_string changed of device parameter [0, '0.0.8', 4]: 1.00
+(2026-10-10 19:49:10,802) [INFO] Adding listener for device parameter [0, '0.0.8', 5], property: value
+(2026-10-10 19:49:10,802) [INFO] Property value changed of device parameter [0, '0.0.8', 5]: 0.8999999761581421
+(2026-10-10 19:49:10,802) [INFO] Property value_string changed of device parameter [0, '0.0.8', 5]: 0.90
+(2026-10-10 19:49:10,803) [INFO] Adding listener for device parameter [0, '0.0.8', 6], property: value
+(2026-10-10 19:49:10,803) [INFO] Property value changed of device parameter [0, '0.0.8', 6]: 0.5699999928474426
+(2026-10-10 19:49:10,803) [INFO] Property value_string changed of device parameter [0, '0.0.8', 6]: 0.57
+(2026-10-10 19:49:10,803) [INFO] Adding listener for device parameter [0, '0.0.8', 7], property: value
+(2026-10-10 19:49:10,803) [INFO] Property value changed of device parameter [0, '0.0.8', 7]: 0.6629921793937683
+(2026-10-10 19:49:10,803) [INFO] Property value_string changed of device parameter [0, '0.0.8', 7]: 0.66
+(2026-10-10 19:49:10,803) [INFO] Adding listener for device parameter [0, '0.0.8', 8], property: value
+(2026-10-10 19:49:10,803) [INFO] Property value changed of device parameter [0, '0.0.8', 8]: 0.8851180672645569
+(2026-10-10 19:49:10,803) [INFO] Property value_string changed of device parameter [0, '0.0.8', 8]: 0.89
+(2026-10-10 19:49:10,804) [INFO] Adding listener for device parameter [0, '0.0.9', 0], property: value
+(2026-10-10 19:49:10,804) [INFO] Property value changed of device parameter [0, '0.0.9', 0]: 1.0
+(2026-10-10 19:49:10,804) [INFO] Property value_string changed of device parameter [0, '0.0.9', 0]: On
+(2026-10-10 19:49:10,804) [INFO] Adding listener for device parameter [0, '0.0.9', 1], property: value
+(2026-10-10 19:49:10,804) [INFO] Property value changed of device parameter [0, '0.0.9', 1]: 1.0
+(2026-10-10 19:49:10,804) [INFO] Property value_string changed of device parameter [0, '0.0.9', 1]: 2x12
+(2026-10-10 19:49:10,804) [INFO] Adding listener for device parameter [0, '0.0.9', 2], property: value
+(2026-10-10 19:49:10,804) [INFO] Property value changed of device parameter [0, '0.0.9', 2]: 1.0
+(2026-10-10 19:49:10,804) [INFO] Property value_string changed of device parameter [0, '0.0.9', 2]: Dynamic
+(2026-10-10 19:49:10,804) [INFO] Adding listener for device parameter [0, '0.0.9', 3], property: value
+(2026-10-10 19:49:10,804) [INFO] Property value changed of device parameter [0, '0.0.9', 3]: 0.0
+(2026-10-10 19:49:10,805) [INFO] Property value_string changed of device parameter [0, '0.0.9', 3]: Near On-Axis
+(2026-10-10 19:49:10,805) [INFO] Adding listener for device parameter [0, '0.0.9', 4], property: value
+(2026-10-10 19:49:10,805) [INFO] Property value changed of device parameter [0, '0.0.9', 4]: 1.0
+(2026-10-10 19:49:10,805) [INFO] Property value_string changed of device parameter [0, '0.0.9', 4]: On
+(2026-10-10 19:49:10,805) [INFO] Adding listener for device parameter [0, '0.0.9', 5], property: value
+(2026-10-10 19:49:10,805) [INFO] Property value changed of device parameter [0, '0.0.9', 5]: 1.0
+(2026-10-10 19:49:10,805) [INFO] Property value_string changed of device parameter [0, '0.0.9', 5]: 100 %
+(2026-10-10 19:49:10,805) [INFO] Adding listener for device parameter [0, '0.0.10', 0], property: value
+(2026-10-10 19:49:10,806) [INFO] Property value changed of device parameter [0, '0.0.10', 0]: 1.0
+(2026-10-10 19:49:10,806) [INFO] Property value_string changed of device parameter [0, '0.0.10', 0]: On
+(2026-10-10 19:49:10,806) [INFO] Adding listener for device parameter [0, '0.0.10', 1], property: value
+(2026-10-10 19:49:10,806) [INFO] Property value changed of device parameter [0, '0.0.10', 1]: 0.0
+(2026-10-10 19:49:10,806) [INFO] Property value_string changed of device parameter [0, '0.0.10', 1]: Repitch
+(2026-10-10 19:49:10,806) [INFO] Adding listener for device parameter [0, '0.0.10', 2], property: value
+(2026-10-10 19:49:10,806) [INFO] Property value changed of device parameter [0, '0.0.10', 2]: 1.0
+(2026-10-10 19:49:10,806) [INFO] Property value_string changed of device parameter [0, '0.0.10', 2]: On
+(2026-10-10 19:49:10,806) [INFO] Adding listener for device parameter [0, '0.0.10', 3], property: value
+(2026-10-10 19:49:10,806) [INFO] Property value changed of device parameter [0, '0.0.10', 3]: 0.0
+(2026-10-10 19:49:10,806) [INFO] Property value_string changed of device parameter [0, '0.0.10', 3]: Off
+(2026-10-10 19:49:10,806) [INFO] Adding listener for device parameter [0, '0.0.10', 4], property: value
+(2026-10-10 19:49:10,806) [INFO] Property value changed of device parameter [0, '0.0.10', 4]: 0.0
+(2026-10-10 19:49:10,806) [INFO] Property value_string changed of device parameter [0, '0.0.10', 4]: Off
+(2026-10-10 19:49:10,807) [INFO] Adding listener for device parameter [0, '0.0.10', 5], property: value
+(2026-10-10 19:49:10,807) [INFO] Property value changed of device parameter [0, '0.0.10', 5]: 1.0
+(2026-10-10 19:49:10,807) [INFO] Property value_string changed of device parameter [0, '0.0.10', 5]: On
+(2026-10-10 19:49:10,807) [INFO] Adding listener for device parameter [0, '0.0.10', 6], property: value
+(2026-10-10 19:49:10,807) [INFO] Property value changed of device parameter [0, '0.0.10', 6]: 0.44678786396980286
+(2026-10-10 19:49:10,807) [INFO] Property value_string changed of device parameter [0, '0.0.10', 6]: 90.0 ms
+(2026-10-10 19:49:10,807) [INFO] Adding listener for device parameter [0, '0.0.10', 7], property: value
+(2026-10-10 19:49:10,807) [INFO] Property value changed of device parameter [0, '0.0.10', 7]: 0.5953847169876099
+(2026-10-10 19:49:10,807) [INFO] Property value_string changed of device parameter [0, '0.0.10', 7]: 375 ms
+(2026-10-10 19:49:10,807) [INFO] Adding listener for device parameter [0, '0.0.10', 8], property: value
+(2026-10-10 19:49:10,807) [INFO] Property value changed of device parameter [0, '0.0.10', 8]: 2.0
+(2026-10-10 19:49:10,807) [INFO] Property value_string changed of device parameter [0, '0.0.10', 8]: 3
+(2026-10-10 19:49:10,808) [INFO] Adding listener for device parameter [0, '0.0.11', 0], property: value
+(2026-10-10 19:49:10,808) [INFO] Property value changed of device parameter [0, '0.0.11', 0]: 1.0
+(2026-10-10 19:49:10,808) [INFO] Property value_string changed of device parameter [0, '0.0.11', 0]: On
+(2026-10-10 19:49:10,808) [INFO] Adding listener for device parameter [0, '0.0.12', 0], property: value
+(2026-10-10 19:49:10,808) [INFO] Property value changed of device parameter [0, '0.0.12', 0]: 1.0
+(2026-10-10 19:49:10,808) [INFO] Property value_string changed of device parameter [0, '0.0.12', 0]: On
+(2026-10-10 19:49:10,808) [INFO] Adding listener for device parameter [0, '0.0.12', 1], property: value
+(2026-10-10 19:49:10,809) [INFO] Property value changed of device parameter [0, '0.0.12', 1]: 0.26771652698516846
+(2026-10-10 19:49:10,809) [INFO] Property value_string changed of device parameter [0, '0.0.12', 1]: 0.01
+(2026-10-10 19:49:10,809) [INFO] Adding listener for device parameter [0, '0.0.12', 2], property: value
+(2026-10-10 19:49:10,809) [INFO] Property value changed of device parameter [0, '0.0.12', 2]: 15.812623977661133
+(2026-10-10 19:49:10,809) [INFO] Property value_string changed of device parameter [0, '0.0.12', 2]: 9.14 Hz
+(2026-10-10 19:49:10,809) [INFO] Adding listener for device parameter [0, '0.0.12', 3], property: value
+(2026-10-10 19:49:10,809) [INFO] Property value changed of device parameter [0, '0.0.12', 3]: 0.0
+(2026-10-10 19:49:10,809) [INFO] Property value_string changed of device parameter [0, '0.0.12', 3]: off
+(2026-10-10 19:49:10,809) [INFO] Adding listener for device parameter [0, '0.0.12', 4], property: value
+(2026-10-10 19:49:10,809) [INFO] Property value changed of device parameter [0, '0.0.12', 4]: 0.0
+(2026-10-10 19:49:10,809) [INFO] Property value_string changed of device parameter [0, '0.0.12', 4]: 0
+(2026-10-10 19:49:10,810) [INFO] Adding listener for device parameter [0, '0.0.13', 0], property: value
+(2026-10-10 19:49:10,810) [INFO] Property value changed of device parameter [0, '0.0.13', 0]: 1.0
+(2026-10-10 19:49:10,810) [INFO] Property value_string changed of device parameter [0, '0.0.13', 0]: On
+(2026-10-10 19:49:10,810) [INFO] Adding listener for device parameter [0, '0.0.13', 1], property: value
+(2026-10-10 19:49:10,810) [INFO] Property value changed of device parameter [0, '0.0.13', 1]: 0.0
+(2026-10-10 19:49:10,810) [INFO] Property value_string changed of device parameter [0, '0.0.13', 1]: 0
+(2026-10-10 19:49:10,810) [INFO] Adding listener for device parameter [0, '0.0.13', 2], property: value
+(2026-10-10 19:49:10,810) [INFO] Property value changed of device parameter [0, '0.0.13', 2]: 0.0
+(2026-10-10 19:49:10,810) [INFO] Property value_string changed of device parameter [0, '0.0.13', 2]: 0
+(2026-10-10 19:49:10,810) [INFO] Adding listener for device parameter [0, '0.0.13', 3], property: value
+(2026-10-10 19:49:10,811) [INFO] Property value changed of device parameter [0, '0.0.13', 3]: 0.0
+(2026-10-10 19:49:10,811) [INFO] Property value_string changed of device parameter [0, '0.0.13', 3]: 0
+(2026-10-10 19:49:10,811) [INFO] Adding listener for device parameter [0, '0.0.13', 4], property: value
+(2026-10-10 19:49:10,811) [INFO] Property value changed of device parameter [0, '0.0.13', 4]: 0.0
+(2026-10-10 19:49:10,811) [INFO] Property value_string changed of device parameter [0, '0.0.13', 4]: -inf dB
+(2026-10-10 19:49:10,811) [INFO] Adding listener for device parameter [0, '0.0.13', 5], property: value
+(2026-10-10 19:49:10,811) [INFO] Property value changed of device parameter [0, '0.0.13', 5]: 73.62948608398438
+(2026-10-10 19:49:10,811) [INFO] Property value_string changed of device parameter [0, '0.0.13', 5]: 328 ms
+(2026-10-10 19:49:10,811) [INFO] Adding listener for device parameter [0, '0.0.13', 6], property: value
+(2026-10-10 19:49:10,811) [INFO] Property value changed of device parameter [0, '0.0.13', 6]: 111.0703125
+(2026-10-10 19:49:10,811) [INFO] Property value_string changed of device parameter [0, '0.0.13', 6]: 83 %
+(2026-10-10 19:49:10,811) [INFO] Adding listener for device parameter [0, '0.0.13', 7], property: value
+(2026-10-10 19:49:10,811) [INFO] Property value changed of device parameter [0, '0.0.13', 7]: 64.82290649414062
+(2026-10-10 19:49:10,811) [INFO] Property value_string changed of device parameter [0, '0.0.13', 7]: 1.01 kHz
+(2026-10-10 19:49:10,811) [INFO] Adding listener for device parameter [0, '0.0.13', 8], property: value
+(2026-10-10 19:49:10,811) [INFO] Property value changed of device parameter [0, '0.0.13', 8]: 64.82290649414062
+(2026-10-10 19:49:10,811) [INFO] Property value_string changed of device parameter [0, '0.0.13', 8]: 4.84 
+(2026-10-10 19:49:10,812) [INFO] Adding listener for device parameter [0, '0.0.14', 0], property: value
+(2026-10-10 19:49:10,812) [INFO] Property value changed of device parameter [0, '0.0.14', 0]: 1.0
+(2026-10-10 19:49:10,812) [INFO] Property value_string changed of device parameter [0, '0.0.14', 0]: On
+(2026-10-10 19:49:10,812) [INFO] Adding listener for device parameter [0, '0.0.14', 1], property: value
+(2026-10-10 19:49:10,812) [INFO] Property value changed of device parameter [0, '0.0.14', 1]: 0.27000001072883606
+(2026-10-10 19:49:10,812) [INFO] Property value_string changed of device parameter [0, '0.0.14', 1]: 0.27
+(2026-10-10 19:49:10,812) [INFO] Adding listener for device parameter [0, '0.0.14', 2], property: value
+(2026-10-10 19:49:10,812) [INFO] Property value changed of device parameter [0, '0.0.14', 2]: 1.0
+(2026-10-10 19:49:10,812) [INFO] Property value_string changed of device parameter [0, '0.0.14', 2]: m
+(2026-10-10 19:49:10,812) [INFO] Adding listener for device parameter [0, '0.0.14', 3], property: value
+(2026-10-10 19:49:10,812) [INFO] Property value changed of device parameter [0, '0.0.14', 3]: 1.0
+(2026-10-10 19:49:10,812) [INFO] Property value_string changed of device parameter [0, '0.0.14', 3]: Up
+(2026-10-10 19:49:10,812) [INFO] Adding listener for device parameter [0, '0.0.14', 4], property: value
+(2026-10-10 19:49:10,812) [INFO] Property value changed of device parameter [0, '0.0.14', 4]: 0.0
+(2026-10-10 19:49:10,812) [INFO] Property value_string changed of device parameter [0, '0.0.14', 4]: 0.00
+(2026-10-10 19:49:10,812) [INFO] Adding listener for device parameter [0, '0.0.14', 5], property: value
+(2026-10-10 19:49:10,812) [INFO] Property value changed of device parameter [0, '0.0.14', 5]: 0.44999998807907104
+(2026-10-10 19:49:10,812) [INFO] Property value_string changed of device parameter [0, '0.0.14', 5]: 0.45
+(2026-10-10 19:49:10,812) [INFO] Adding listener for device parameter [0, '0.0.14', 6], property: value
+(2026-10-10 19:49:10,812) [INFO] Property value changed of device parameter [0, '0.0.14', 6]: 0.0
+(2026-10-10 19:49:10,812) [INFO] Property value_string changed of device parameter [0, '0.0.14', 6]: off
+(2026-10-10 19:49:10,812) [INFO] Adding listener for device parameter [0, '0.0.14', 7], property: value
+(2026-10-10 19:49:10,812) [INFO] Property value changed of device parameter [0, '0.0.14', 7]: 1.0
+(2026-10-10 19:49:10,813) [INFO] Property value_string changed of device parameter [0, '0.0.14', 7]: on
+(2026-10-10 19:49:10,813) [INFO] Adding listener for device parameter [0, '0.0.14', 8], property: value
+(2026-10-10 19:49:10,813) [INFO] Property value changed of device parameter [0, '0.0.14', 8]: 0.0
+(2026-10-10 19:49:10,813) [INFO] Property value_string changed of device parameter [0, '0.0.14', 8]: 0.00
+(2026-10-10 19:49:10,813) [INFO] Adding listener for device parameter [0, '0.0.15', 0], property: value
+(2026-10-10 19:49:10,813) [INFO] Property value changed of device parameter [0, '0.0.15', 0]: 0.0
+(2026-10-10 19:49:10,813) [INFO] Property value_string changed of device parameter [0, '0.0.15', 0]: Off
+(2026-10-10 19:49:10,813) [INFO] Adding listener for device parameter [0, '0.0.15', 1], property: value
+(2026-10-10 19:49:10,813) [INFO] Property value changed of device parameter [0, '0.0.15', 1]: 122.0
+(2026-10-10 19:49:10,813) [INFO] Property value_string changed of device parameter [0, '0.0.15', 1]: 1.81 kHz
+(2026-10-10 19:49:10,813) [INFO] Adding listener for device parameter [0, '0.0.15', 2], property: value
+(2026-10-10 19:49:10,813) [INFO] Property value changed of device parameter [0, '0.0.15', 2]: 97.0
+(2026-10-10 19:49:10,813) [INFO] Property value_string changed of device parameter [0, '0.0.15', 2]: -5.98 dB
+(2026-10-10 19:49:10,813) [INFO] Adding listener for device parameter [0, '0.0.15', 3], property: value
+(2026-10-10 19:49:10,813) [INFO] Property value changed of device parameter [0, '0.0.15', 3]: 0.0
+(2026-10-10 19:49:10,813) [INFO] Property value_string changed of device parameter [0, '0.0.15', 3]: 0
+(2026-10-10 19:49:10,813) [INFO] Adding listener for device parameter [0, '0.0.15', 4], property: value
+(2026-10-10 19:49:10,813) [INFO] Property value changed of device parameter [0, '0.0.15', 4]: 0.0
+(2026-10-10 19:49:10,813) [INFO] Property value_string changed of device parameter [0, '0.0.15', 4]: 0
+(2026-10-10 19:49:10,814) [INFO] Adding listener for device parameter [0, '0.0.15', 5], property: value
+(2026-10-10 19:49:10,814) [INFO] Property value changed of device parameter [0, '0.0.15', 5]: 0.0
+(2026-10-10 19:49:10,814) [INFO] Property value_string changed of device parameter [0, '0.0.15', 5]: 0
+(2026-10-10 19:49:10,814) [INFO] Adding listener for device parameter [0, '0.0.15', 6], property: value
+(2026-10-10 19:49:10,814) [INFO] Property value changed of device parameter [0, '0.0.15', 6]: 0.0
+(2026-10-10 19:49:10,814) [INFO] Property value_string changed of device parameter [0, '0.0.15', 6]: 0
+(2026-10-10 19:49:10,814) [INFO] Adding listener for device parameter [0, '0.0.15', 7], property: value
+(2026-10-10 19:49:10,814) [INFO] Property value changed of device parameter [0, '0.0.15', 7]: 0.0
+(2026-10-10 19:49:10,814) [INFO] Property value_string changed of device parameter [0, '0.0.15', 7]: 0
+(2026-10-10 19:49:10,814) [INFO] Adding listener for device parameter [0, '0.0.15', 8], property: value
+(2026-10-10 19:49:10,814) [INFO] Property value changed of device parameter [0, '0.0.15', 8]: 0.0
+(2026-10-10 19:49:10,814) [INFO] Property value_string changed of device parameter [0, '0.0.15', 8]: 0
+(2026-10-10 19:49:10,990) [INFO] Adding listener for device parameter [0, '0.0.1.0.0', 0], property: value
+(2026-10-10 19:49:10,990) [INFO] Property value changed of device parameter [0, '0.0.1.0.0', 0]: 1.0
+(2026-10-10 19:49:10,991) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.0', 0]: On
+(2026-10-10 19:49:10,991) [INFO] Adding listener for device parameter [0, '0.0.1.0.0', 1], property: value
+(2026-10-10 19:49:10,991) [INFO] Property value changed of device parameter [0, '0.0.1.0.0', 1]: 0.0
+(2026-10-10 19:49:10,991) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.0', 1]: 0.00 ms
+(2026-10-10 19:49:10,991) [INFO] Adding listener for device parameter [0, '0.0.1.0.0', 2], property: value
+(2026-10-10 19:49:10,991) [INFO] Property value changed of device parameter [0, '0.0.1.0.0', 2]: 0.0
+(2026-10-10 19:49:10,991) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.0', 2]: 0
+(2026-10-10 19:49:10,992) [INFO] Adding listener for device parameter [0, '0.0.1.0.0', 3], property: value
+(2026-10-10 19:49:10,992) [INFO] Property value changed of device parameter [0, '0.0.1.0.0', 3]: 0.0
+(2026-10-10 19:49:10,992) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.0', 3]: 0.00 %
+(2026-10-10 19:49:10,992) [INFO] Adding listener for device parameter [0, '0.0.1.0.0', 4], property: value
+(2026-10-10 19:49:10,992) [INFO] Property value changed of device parameter [0, '0.0.1.0.0', 4]: -19.971267700195312
+(2026-10-10 19:49:10,992) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.0', 4]: 0.0 dB
+(2026-10-10 19:49:10,992) [INFO] Adding listener for device parameter [0, '0.0.1.0.0', 5], property: value
+(2026-10-10 19:49:10,992) [INFO] Property value changed of device parameter [0, '0.0.1.0.0', 5]: 0.0
+(2026-10-10 19:49:10,992) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.0', 5]: 0.00 %
+(2026-10-10 19:49:10,993) [INFO] Adding listener for device parameter [0, '0.0.1.0.0', 6], property: value
+(2026-10-10 19:49:10,993) [INFO] Property value changed of device parameter [0, '0.0.1.0.0', 6]: 55.11811065673828
+(2026-10-10 19:49:10,993) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.0', 6]: 55.1 %
+(2026-10-10 19:49:10,993) [INFO] Adding listener for device parameter [0, '0.0.1.0.0', 7], property: value
+(2026-10-10 19:49:10,993) [INFO] Property value changed of device parameter [0, '0.0.1.0.0', 7]: 0.0
+(2026-10-10 19:49:10,993) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.0', 7]: val1
+(2026-10-10 19:49:10,993) [INFO] Adding listener for device parameter [0, '0.0.1.0.0', 8], property: value
+(2026-10-10 19:49:10,993) [INFO] Property value changed of device parameter [0, '0.0.1.0.0', 8]: 0.0
+(2026-10-10 19:49:10,993) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.0', 8]: Free
+(2026-10-10 19:49:10,994) [INFO] Adding listener for device parameter [0, '0.0.1.0.1', 0], property: value
+(2026-10-10 19:49:10,994) [INFO] Property value changed of device parameter [0, '0.0.1.0.1', 0]: 1.0
+(2026-10-10 19:49:10,994) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.1', 0]: On
+(2026-10-10 19:49:10,994) [INFO] Adding listener for device parameter [0, '0.0.1.0.1', 1], property: value
+(2026-10-10 19:49:10,994) [INFO] Property value changed of device parameter [0, '0.0.1.0.1', 1]: 0.34645670652389526
+(2026-10-10 19:49:10,994) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.1', 1]: 1.19 kHz
+(2026-10-10 19:49:10,995) [INFO] Adding listener for device parameter [0, '0.0.1.0.1', 2], property: value
+(2026-10-10 19:49:10,995) [INFO] Property value changed of device parameter [0, '0.0.1.0.1', 2]: 0.0
+(2026-10-10 19:49:10,995) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.1', 2]: 0.0 %
+(2026-10-10 19:49:10,995) [INFO] Adding listener for device parameter [0, '0.0.1.0.1', 3], property: value
+(2026-10-10 19:49:10,995) [INFO] Property value changed of device parameter [0, '0.0.1.0.1', 3]: 2.0
+(2026-10-10 19:49:10,995) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.1', 3]: 2 
+(2026-10-10 19:49:10,995) [INFO] Adding listener for device parameter [0, '0.0.1.0.1', 4], property: value
+(2026-10-10 19:49:10,995) [INFO] Property value changed of device parameter [0, '0.0.1.0.1', 4]: 0.0
+(2026-10-10 19:49:10,995) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.1', 4]: 0.0 %
+(2026-10-10 19:49:10,996) [INFO] Adding listener for device parameter [0, '0.0.1.0.1', 5], property: value
+(2026-10-10 19:49:10,996) [INFO] Property value changed of device parameter [0, '0.0.1.0.1', 5]: 0.0
+(2026-10-10 19:49:10,996) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.1', 5]: Off
+(2026-10-10 19:49:10,996) [INFO] Adding listener for device parameter [0, '0.0.1.0.1', 6], property: value
+(2026-10-10 19:49:10,996) [INFO] Property value changed of device parameter [0, '0.0.1.0.1', 6]: 0.0
+(2026-10-10 19:49:10,996) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.1', 6]: Off
+(2026-10-10 19:49:10,996) [INFO] Adding listener for device parameter [0, '0.0.1.0.1', 7], property: value
+(2026-10-10 19:49:10,996) [INFO] Property value changed of device parameter [0, '0.0.1.0.1', 7]: 1.0
+(2026-10-10 19:49:10,996) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.1', 7]: On
+(2026-10-10 19:49:10,997) [INFO] Adding listener for device parameter [0, '0.0.1.0.1', 8], property: value
+(2026-10-10 19:49:10,997) [INFO] Property value changed of device parameter [0, '0.0.1.0.1', 8]: 1.0
+(2026-10-10 19:49:10,997) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.1', 8]: 4.00 
+(2026-10-10 19:49:10,997) [INFO] Adding listener for device parameter [0, '0.0.1.0.2', 0], property: value
+(2026-10-10 19:49:10,997) [INFO] Property value changed of device parameter [0, '0.0.1.0.2', 0]: 1.0
+(2026-10-10 19:49:10,997) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.2', 0]: On
+(2026-10-10 19:49:10,997) [INFO] Adding listener for device parameter [0, '0.0.1.0.2', 1], property: value
+(2026-10-10 19:49:10,998) [INFO] Property value changed of device parameter [0, '0.0.1.0.2', 1]: 16.535432815551758
+(2026-10-10 19:49:10,998) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.2', 1]: 16.5 %
+(2026-10-10 19:49:10,998) [INFO] Adding listener for device parameter [0, '0.0.1.0.2', 2], property: value
+(2026-10-10 19:49:10,998) [INFO] Property value changed of device parameter [0, '0.0.1.0.2', 2]: 15.69897747039795
+(2026-10-10 19:49:10,998) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.2', 2]: 3.30 Hz
+(2026-10-10 19:49:10,998) [INFO] Adding listener for device parameter [0, '0.0.1.0.2', 3], property: value
+(2026-10-10 19:49:10,998) [INFO] Property value changed of device parameter [0, '0.0.1.0.2', 3]: 0.0
+(2026-10-10 19:49:10,998) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.2', 3]: Off
+(2026-10-10 19:49:10,998) [INFO] Adding listener for device parameter [0, '0.0.1.0.2', 4], property: value
+(2026-10-10 19:49:10,998) [INFO] Property value changed of device parameter [0, '0.0.1.0.2', 4]: 0.0
+(2026-10-10 19:49:10,998) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.2', 4]: 0 %
+(2026-10-10 19:49:10,999) [INFO] Adding listener for device parameter [0, '0.0.1.0.2', 5], property: value
+(2026-10-10 19:49:10,999) [INFO] Property value changed of device parameter [0, '0.0.1.0.2', 5]: 0.0
+(2026-10-10 19:49:10,999) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.2', 5]: 0 %
+(2026-10-10 19:49:10,999) [INFO] Adding listener for device parameter [0, '0.0.1.0.2', 6], property: value
+(2026-10-10 19:49:10,999) [INFO] Property value changed of device parameter [0, '0.0.1.0.2', 6]: 0.0
+(2026-10-10 19:49:10,999) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.2', 6]: 0 %
+(2026-10-10 19:49:10,999) [INFO] Adding listener for device parameter [0, '0.0.1.0.2', 7], property: value
+(2026-10-10 19:49:10,999) [INFO] Property value changed of device parameter [0, '0.0.1.0.2', 7]: 0.0
+(2026-10-10 19:49:10,999) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.2', 7]: Off
+(2026-10-10 19:49:10,999) [INFO] Adding listener for device parameter [0, '0.0.1.0.2', 8], property: value
+(2026-10-10 19:49:10,999) [INFO] Property value changed of device parameter [0, '0.0.1.0.2', 8]: 5.0
+(2026-10-10 19:49:10,999) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.2', 8]: Random
+(2026-10-10 19:49:11,000) [INFO] Adding listener for device parameter [0, '0.0.1.0.3', 0], property: value
+(2026-10-10 19:49:11,000) [INFO] Property value changed of device parameter [0, '0.0.1.0.3', 0]: 1.0
+(2026-10-10 19:49:11,000) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.3', 0]: On
+(2026-10-10 19:49:11,000) [INFO] Adding listener for device parameter [0, '0.0.1.0.3', 1], property: value
+(2026-10-10 19:49:11,000) [INFO] Property value changed of device parameter [0, '0.0.1.0.3', 1]: 15.748031616210938
+(2026-10-10 19:49:11,000) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.3', 1]: 15.7 %
+(2026-10-10 19:49:11,000) [INFO] Adding listener for device parameter [0, '0.0.1.0.3', 2], property: value
+(2026-10-10 19:49:11,000) [INFO] Property value changed of device parameter [0, '0.0.1.0.3', 2]: 10.078740119934082
+(2026-10-10 19:49:11,001) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.3', 2]: 1.01 Hz
+(2026-10-10 19:49:11,001) [INFO] Adding listener for device parameter [0, '0.0.1.0.3', 3], property: value
+(2026-10-10 19:49:11,001) [INFO] Property value changed of device parameter [0, '0.0.1.0.3', 3]: 0.0
+(2026-10-10 19:49:11,001) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.3', 3]: Off
+(2026-10-10 19:49:11,001) [INFO] Adding listener for device parameter [0, '0.0.1.0.3', 4], property: value
+(2026-10-10 19:49:11,001) [INFO] Property value changed of device parameter [0, '0.0.1.0.3', 4]: 0.0
+(2026-10-10 19:49:11,001) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.3', 4]: 0 %
+(2026-10-10 19:49:11,001) [INFO] Adding listener for device parameter [0, '0.0.1.0.3', 5], property: value
+(2026-10-10 19:49:11,001) [INFO] Property value changed of device parameter [0, '0.0.1.0.3', 5]: 0.0
+(2026-10-10 19:49:11,001) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.3', 5]: 0 %
+(2026-10-10 19:49:11,001) [INFO] Adding listener for device parameter [0, '0.0.1.0.3', 6], property: value
+(2026-10-10 19:49:11,002) [INFO] Property value changed of device parameter [0, '0.0.1.0.3', 6]: 0.0
+(2026-10-10 19:49:11,002) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.3', 6]: 0 %
+(2026-10-10 19:49:11,002) [INFO] Adding listener for device parameter [0, '0.0.1.0.3', 7], property: value
+(2026-10-10 19:49:11,002) [INFO] Property value changed of device parameter [0, '0.0.1.0.3', 7]: 0.0
+(2026-10-10 19:49:11,002) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.3', 7]: Off
+(2026-10-10 19:49:11,002) [INFO] Adding listener for device parameter [0, '0.0.1.0.3', 8], property: value
+(2026-10-10 19:49:11,002) [INFO] Property value changed of device parameter [0, '0.0.1.0.3', 8]: 4.0
+(2026-10-10 19:49:11,002) [INFO] Property value_string changed of device parameter [0, '0.0.1.0.3', 8]: Square
+(2026-10-10 19:49:11,003) [INFO] Adding listener for device parameter [0, '0.0.13.1.0', 0], property: value
+(2026-10-10 19:49:11,003) [INFO] Property value changed of device parameter [0, '0.0.13.1.0', 0]: 1.0
+(2026-10-10 19:49:11,003) [INFO] Property value_string changed of device parameter [0, '0.0.13.1.0', 0]: On
+(2026-10-10 19:49:11,003) [INFO] Adding listener for device parameter [0, '0.0.13.1.0', 1], property: value
+(2026-10-10 19:49:11,003) [INFO] Property value changed of device parameter [0, '0.0.13.1.0', 1]: 0.0
+(2026-10-10 19:49:11,003) [INFO] Property value_string changed of device parameter [0, '0.0.13.1.0', 1]: Off
+(2026-10-10 19:49:11,003) [INFO] Adding listener for device parameter [0, '0.0.13.1.0', 2], property: value
+(2026-10-10 19:49:11,003) [INFO] Property value changed of device parameter [0, '0.0.13.1.0', 2]: 0.0
+(2026-10-10 19:49:11,003) [INFO] Property value_string changed of device parameter [0, '0.0.13.1.0', 2]: Off
+(2026-10-10 19:49:11,003) [INFO] Adding listener for device parameter [0, '0.0.13.1.0', 3], property: value
+(2026-10-10 19:49:11,003) [INFO] Property value changed of device parameter [0, '0.0.13.1.0', 3]: 1.0
+(2026-10-10 19:49:11,003) [INFO] Property value_string changed of device parameter [0, '0.0.13.1.0', 3]: Stereo
+(2026-10-10 19:49:11,004) [INFO] Adding listener for device parameter [0, '0.0.13.1.0', 4], property: value
+(2026-10-10 19:49:11,004) [INFO] Property value changed of device parameter [0, '0.0.13.1.0', 4]: 1.0
+(2026-10-10 19:49:11,004) [INFO] Property value_string changed of device parameter [0, '0.0.13.1.0', 4]: 100 %
+(2026-10-10 19:49:11,004) [INFO] Adding listener for device parameter [0, '0.0.13.1.0', 5], property: value
+(2026-10-10 19:49:11,004) [INFO] Property value changed of device parameter [0, '0.0.13.1.0', 5]: 0.0
+(2026-10-10 19:49:11,004) [INFO] Property value_string changed of device parameter [0, '0.0.13.1.0', 5]: Off
+(2026-10-10 19:49:11,004) [INFO] Adding listener for device parameter [0, '0.0.13.1.0', 6], property: value
+(2026-10-10 19:49:11,004) [INFO] Property value changed of device parameter [0, '0.0.13.1.0', 6]: 0.0
+(2026-10-10 19:49:11,004) [INFO] Property value_string changed of device parameter [0, '0.0.13.1.0', 6]: Off
+(2026-10-10 19:49:11,004) [INFO] Adding listener for device parameter [0, '0.0.13.1.0', 7], property: value
+(2026-10-10 19:49:11,004) [INFO] Property value changed of device parameter [0, '0.0.13.1.0', 7]: 0.3802112340927124
+(2026-10-10 19:49:11,005) [INFO] Property value_string changed of device parameter [0, '0.0.13.1.0', 7]: 120 Hz
+(2026-10-10 19:49:11,005) [INFO] Adding listener for device parameter [0, '0.0.13.1.0', 8], property: value
+(2026-10-10 19:49:11,005) [INFO] Property value changed of device parameter [0, '0.0.13.1.0', 8]: 0.0
+(2026-10-10 19:49:11,005) [INFO] Property value_string changed of device parameter [0, '0.0.13.1.0', 8]: C
+(2026-10-10 19:49:11,005) [INFO] Adding listener for device parameter [0, '0.0.13.1.1', 0], property: value
+(2026-10-10 19:49:11,005) [INFO] Property value changed of device parameter [0, '0.0.13.1.1', 0]: 1.0
+(2026-10-10 19:49:11,005) [INFO] Property value_string changed of device parameter [0, '0.0.13.1.1', 0]: On
+(2026-10-10 19:49:11,005) [INFO] Adding listener for device parameter [0, '0.0.13.1.1', 1], property: value
+(2026-10-10 19:49:11,006) [INFO] Property value changed of device parameter [0, '0.0.13.1.1', 1]: 0.0
+(2026-10-10 19:49:11,006) [INFO] Property value_string changed of device parameter [0, '0.0.13.1.1', 1]: Repitch
+(2026-10-10 19:49:11,006) [INFO] Adding listener for device parameter [0, '0.0.13.1.1', 2], property: value
+(2026-10-10 19:49:11,006) [INFO] Property value changed of device parameter [0, '0.0.13.1.1', 2]: 1.0
+(2026-10-10 19:49:11,006) [INFO] Property value_string changed of device parameter [0, '0.0.13.1.1', 2]: On
+(2026-10-10 19:49:11,006) [INFO] Adding listener for device parameter [0, '0.0.13.1.1', 3], property: value
+(2026-10-10 19:49:11,006) [INFO] Property value changed of device parameter [0, '0.0.13.1.1', 3]: 0.0
+(2026-10-10 19:49:11,006) [INFO] Property value_string changed of device parameter [0, '0.0.13.1.1', 3]: Off
+(2026-10-10 19:49:11,006) [INFO] Adding listener for device parameter [0, '0.0.13.1.1', 4], property: value
+(2026-10-10 19:49:11,006) [INFO] Property value changed of device parameter [0, '0.0.13.1.1', 4]: 0.0
+(2026-10-10 19:49:11,006) [INFO] Property value_string changed of device parameter [0, '0.0.13.1.1', 4]: Off
+(2026-10-10 19:49:11,006) [INFO] Adding listener for device parameter [0, '0.0.13.1.1', 5], property: value
+(2026-10-10 19:49:11,006) [INFO] Property value changed of device parameter [0, '0.0.13.1.1', 5]: 1.0
+(2026-10-10 19:49:11,007) [INFO] Property value_string changed of device parameter [0, '0.0.13.1.1', 5]: On
+(2026-10-10 19:49:11,007) [INFO] Adding listener for device parameter [0, '0.0.13.1.1', 6], property: value
+(2026-10-10 19:49:11,007) [INFO] Property value changed of device parameter [0, '0.0.13.1.1', 6]: 0.5797597169876099
+(2026-10-10 19:49:11,007) [INFO] Property value_string changed of device parameter [0, '0.0.13.1.1', 6]: 328 ms
+(2026-10-10 19:49:11,007) [INFO] Adding listener for device parameter [0, '0.0.13.1.1', 7], property: value
+(2026-10-10 19:49:11,007) [INFO] Property value changed of device parameter [0, '0.0.13.1.1', 7]: 0.5953847169876099
+(2026-10-10 19:49:11,007) [INFO] Property value_string changed of device parameter [0, '0.0.13.1.1', 7]: 375 ms
+(2026-10-10 19:49:11,007) [INFO] Adding listener for device parameter [0, '0.0.13.1.1', 8], property: value
+(2026-10-10 19:49:11,007) [INFO] Property value changed of device parameter [0, '0.0.13.1.1', 8]: 2.0
+(2026-10-10 19:49:11,007) [INFO] Property value_string changed of device parameter [0, '0.0.13.1.1', 8]: 3
+(2026-10-10 19:49:11,008) [INFO] Adding listener for device parameter [0, '0.0.15.0.0', 0], property: value
+(2026-10-10 19:49:11,008) [INFO] Property value changed of device parameter [0, '0.0.15.0.0', 0]: 1.0
+(2026-10-10 19:49:11,008) [INFO] Property value_string changed of device parameter [0, '0.0.15.0.0', 0]: On
+(2026-10-10 19:49:11,008) [INFO] Adding listener for device parameter [0, '0.0.15.0.0', 1], property: value
+(2026-10-10 19:49:11,008) [INFO] Property value changed of device parameter [0, '0.0.15.0.0', 1]: 0.0
+(2026-10-10 19:49:11,008) [INFO] Property value_string changed of device parameter [0, '0.0.15.0.0', 1]: 0.00 dB
+(2026-10-10 19:49:11,008) [INFO] Adding listener for device parameter [0, '0.0.15.0.0', 2], property: value
+(2026-10-10 19:49:11,008) [INFO] Property value changed of device parameter [0, '0.0.15.0.0', 2]: 1.0
+(2026-10-10 19:49:11,008) [INFO] Property value_string changed of device parameter [0, '0.0.15.0.0', 2]: 100 %
+(2026-10-10 19:49:11,008) [INFO] Adding listener for device parameter [0, '0.0.15.0.0', 3], property: value
+(2026-10-10 19:49:11,009) [INFO] Property value changed of device parameter [0, '0.0.15.0.0', 3]: 1.0
+(2026-10-10 19:49:11,009) [INFO] Property value_string changed of device parameter [0, '0.0.15.0.0', 3]: On
+(2026-10-10 19:49:11,009) [INFO] Adding listener for device parameter [0, '0.0.15.0.0', 4], property: value
+(2026-10-10 19:49:11,009) [INFO] Property value changed of device parameter [0, '0.0.15.0.0', 4]: 1.0
+(2026-10-10 19:49:11,009) [INFO] Property value_string changed of device parameter [0, '0.0.15.0.0', 4]: On
+(2026-10-10 19:49:11,009) [INFO] Adding listener for device parameter [0, '0.0.15.0.0', 5], property: value
+(2026-10-10 19:49:11,009) [INFO] Property value changed of device parameter [0, '0.0.15.0.0', 5]: 6.0
+(2026-10-10 19:49:11,009) [INFO] Property value_string changed of device parameter [0, '0.0.15.0.0', 5]: Low Pass 12dB
+(2026-10-10 19:49:11,009) [INFO] Adding listener for device parameter [0, '0.0.15.0.0', 6], property: value
+(2026-10-10 19:49:11,009) [INFO] Property value changed of device parameter [0, '0.0.15.0.0', 6]: 0.6755114197731018
+(2026-10-10 19:49:11,009) [INFO] Property value_string changed of device parameter [0, '0.0.15.0.0', 6]: 1.81 kHz
+(2026-10-10 19:49:11,009) [INFO] Adding listener for device parameter [0, '0.0.15.0.0', 7], property: value
+(2026-10-10 19:49:11,009) [INFO] Property value changed of device parameter [0, '0.0.15.0.0', 7]: 0.0
+(2026-10-10 19:49:11,010) [INFO] Property value_string changed of device parameter [0, '0.0.15.0.0', 7]: 0.00 dB
+(2026-10-10 19:49:11,010) [INFO] Adding listener for device parameter [0, '0.0.15.0.0', 8], property: value
+(2026-10-10 19:49:11,010) [INFO] Property value changed of device parameter [0, '0.0.15.0.0', 8]: 0.6859503984451294
+(2026-10-10 19:49:11,010) [INFO] Property value_string changed of device parameter [0, '0.0.15.0.0', 8]: 3.52
+(2026-10-10 19:49:11,010) [INFO] Adding listener for device parameter [0, '0.0.15.0.1', 0], property: value
+(2026-10-10 19:49:11,010) [INFO] Property value changed of device parameter [0, '0.0.15.0.1', 0]: 1.0
+(2026-10-10 19:49:11,010) [INFO] Property value_string changed of device parameter [0, '0.0.15.0.1', 0]: On
+(2026-10-10 19:49:11,010) [INFO] Adding listener for device parameter [0, '0.0.15.0.1', 1], property: value
+(2026-10-10 19:49:11,010) [INFO] Property value changed of device parameter [0, '0.0.15.0.1', 1]: 0.0
+(2026-10-10 19:49:11,010) [INFO] Property value_string changed of device parameter [0, '0.0.15.0.1', 1]: Off
+(2026-10-10 19:49:11,010) [INFO] Adding listener for device parameter [0, '0.0.15.0.1', 2], property: value
+(2026-10-10 19:49:11,010) [INFO] Property value changed of device parameter [0, '0.0.15.0.1', 2]: 0.0
+(2026-10-10 19:49:11,011) [INFO] Property value_string changed of device parameter [0, '0.0.15.0.1', 2]: Off
+(2026-10-10 19:49:11,011) [INFO] Adding listener for device parameter [0, '0.0.15.0.1', 3], property: value
+(2026-10-10 19:49:11,011) [INFO] Property value changed of device parameter [0, '0.0.15.0.1', 3]: 1.0
+(2026-10-10 19:49:11,011) [INFO] Property value_string changed of device parameter [0, '0.0.15.0.1', 3]: Stereo
+(2026-10-10 19:49:11,011) [INFO] Adding listener for device parameter [0, '0.0.15.0.1', 4], property: value
+(2026-10-10 19:49:11,011) [INFO] Property value changed of device parameter [0, '0.0.15.0.1', 4]: 1.0
+(2026-10-10 19:49:11,011) [INFO] Property value_string changed of device parameter [0, '0.0.15.0.1', 4]: 100 %
+(2026-10-10 19:49:11,011) [INFO] Adding listener for device parameter [0, '0.0.15.0.1', 5], property: value
+(2026-10-10 19:49:11,011) [INFO] Property value changed of device parameter [0, '0.0.15.0.1', 5]: 0.0
+(2026-10-10 19:49:11,011) [INFO] Property value_string changed of device parameter [0, '0.0.15.0.1', 5]: Off
+(2026-10-10 19:49:11,012) [INFO] Adding listener for device parameter [0, '0.0.15.0.1', 6], property: value
+(2026-10-10 19:49:11,012) [INFO] Property value changed of device parameter [0, '0.0.15.0.1', 6]: 0.0
+(2026-10-10 19:49:11,012) [INFO] Property value_string changed of device parameter [0, '0.0.15.0.1', 6]: Off
+(2026-10-10 19:49:11,012) [INFO] Adding listener for device parameter [0, '0.0.15.0.1', 7], property: value
+(2026-10-10 19:49:11,012) [INFO] Property value changed of device parameter [0, '0.0.15.0.1', 7]: 0.3802112340927124
+(2026-10-10 19:49:11,012) [INFO] Property value_string changed of device parameter [0, '0.0.15.0.1', 7]: 120 Hz
+(2026-10-10 19:49:11,012) [INFO] Adding listener for device parameter [0, '0.0.15.0.1', 8], property: value
+(2026-10-10 19:49:11,012) [INFO] Property value changed of device parameter [0, '0.0.15.0.1', 8]: 0.0
+(2026-10-10 19:49:11,012) [INFO] Property value_string changed of device parameter [0, '0.0.15.0.1', 8]: C
+(2026-10-10 19:57:41,897) [INFO] Property value changed of device parameter [0, '0.0.4', 0]: 1.0
+(2026-10-10 19:57:41,898) [INFO] Property value_string changed of device parameter [0, '0.0.4', 0]: On
+(2026-10-10 19:57:42,717) [INFO] Property value changed of device parameter [0, '0.0.4', 0]: 0.0
+(2026-10-10 19:57:42,718) [INFO] Property value_string changed of device parameter [0, '0.0.4', 0]: Off
+(2026-10-10 19:58:37,966) [INFO] Property value changed of device parameter [0, '0.0.9', 1]: 4.0
+(2026-10-10 19:58:37,967) [INFO] Property value_string changed of device parameter [0, '0.0.9', 1]: 4x10 Bass
+(2026-10-10 19:58:40,616) [INFO] Property value changed of device parameter [0, '0.0.9', 1]: 3.0
+(2026-10-10 19:58:40,616) [INFO] Property value_string changed of device parameter [0, '0.0.9', 1]: 4x10
+(2026-10-10 19:58:42,226) [INFO] Property value changed of device parameter [0, '0.0.9', 1]: 2.0
+(2026-10-10 19:58:42,227) [INFO] Property value_string changed of device parameter [0, '0.0.9', 1]: 4x12
+(2026-10-10 19:58:42,846) [INFO] Property value changed of device parameter [0, '0.0.9', 1]: 1.0
+(2026-10-10 19:58:42,846) [INFO] Property value_string changed of device parameter [0, '0.0.9', 1]: 2x12
+(2026-10-10 20:04:08,420) [INFO] Reloading abletonosc...
+(2026-10-10 20:04:08,421) [INFO] Removing listener for track (0,), property devices
+(2026-10-10 20:04:08,421) [ERROR] AbletonOSC: Error handling OSC message: ('device_parameter_value', (0, '0', 0))
+(2026-10-10 20:04:08,423) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "/Users/hugo/projects/ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 173, in process
+    self.parse_bundle(data, remote_addr)
+  File "/Users/hugo/projects/ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 151, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "/Users/hugo/projects/ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 97, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hugo/projects/ableton/User Library/Remote Scripts/AbletonOSC/manager.py", line 75, in reload_callback
+    self.reload_imports()
+  File "/Users/hugo/projects/ableton/User Library/Remote Scripts/AbletonOSC/manager.py", line 140, in reload_imports
+    self.clear_api()
+  File "/Users/hugo/projects/ableton/User Library/Remote Scripts/AbletonOSC/manager.py", line 109, in clear_api
+    handler.clear_api()
+  File "/Users/hugo/projects/ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/handler.py", line 85, in clear_api
+    self._clear_listeners()
+  File "/Users/hugo/projects/ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/handler.py", line 177, in _clear_listeners
+    target = self.listener_objects[listener_key]
+             ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: ('device_parameter_value', (0, '0', 0))
+
+(2026-10-10 20:04:09,345) [ERROR] AbletonOSC: Unknown OSC address: /live/device/get/is_collapsed
+(2026-10-10 20:12:33,855) [INFO] Property value changed of device parameter [0, '0', 2]: 44.308067321777344
+(2026-10-10 20:12:33,855) [INFO] Property value_string changed of device parameter [0, '0', 2]: 0.03
+(2026-10-10 20:12:33,873) [INFO] Property value changed of device parameter [0, '0.0.12', 1]: 0.34888240694999695
+(2026-10-10 20:12:33,874) [INFO] Property value_string changed of device parameter [0, '0.0.12', 1]: 0.03
+(2026-10-10 20:12:36,558) [INFO] Property selected_track changed of view []: (2,)
