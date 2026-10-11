@@ -50,15 +50,23 @@ class DeviceHandler(AbletonOSCHandler):
             return device_callback
 
         methods = [
+            #--------------------------------------------------------------------------------
+            # Macro variations (rack devices only).
+            #--------------------------------------------------------------------------------
+            "recall_selected_variation",
+            "recall_last_used_variation",
+            "store_variation"
         ]
         properties_r = [
             "class_name",
             "name",
             "type",
             "can_have_chains",
-            "can_have_drum_pads"
+            "can_have_drum_pads",
+            "variation_count"
         ]
         properties_rw = [
+            "selected_variation_index"
         ]
 
         for method in methods:
