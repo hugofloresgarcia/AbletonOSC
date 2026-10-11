@@ -163,6 +163,32 @@ class TrackHandler(AbletonOSCHandler):
         self.osc_server.add_handler("/live/track/get/devices/can_have_chains", create_track_callback(track_get_device_can_have_chains))
 
         #--------------------------------------------------------------------------------
+        # Track: Listen for changes to the track's device list (devices added,
+        # removed or reordered). Replies are sent to /live/track/get/devices/name,
+        # mirroring the getter of the same address.
+        #--------------------------------------------------------------------------------
+        def track_start_listen_devices(track, params: Tuple[Any] = ()):
+            def devices_changed_callback():
+                names = tuple(device.name for device in track.devices)
+                self.logger.info("Property %s changed of %s %s" % ('devices', self.class_identifier, str(params)))
+                self.osc_server.send("/live/track/get/devices/name", (*params, *names))
+
+            listener_key = ("devices", tuple(params))
+            if listener_key in self.listener_functions:
+                self._stop_listen(track, "devices", params)
+
+            self.logger.info("Adding listener for %s %s, property: %s" % (self.class_identifier, str(params), 'devices'))
+            track.add_devices_listener(devices_changed_callback)
+            self.listener_functions[listener_key] = devices_changed_callback
+            self.listener_objects[listener_key] = track
+            devices_changed_callback()
+
+        self.osc_server.add_handler("/live/track/start_listen/devices",
+                                    create_track_callback(track_start_listen_devices, include_track_id=True))
+        self.osc_server.add_handler("/live/track/stop_listen/devices",
+                                    create_track_callback(self._stop_listen, "devices", include_track_id=True))
+
+        #--------------------------------------------------------------------------------
         # Track: Output routing.
         # An output route has a type (e.g. "Ext. Out") and a channel (e.g. "1/2").
         # Since Live 10, both of these need to be set by reference to the appropriate
