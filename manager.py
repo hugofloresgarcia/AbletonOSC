@@ -97,6 +97,7 @@ class Manager(ControlSurface):
                 abletonosc.ClipSlotHandler(self),
                 abletonosc.TrackHandler(self),
                 abletonosc.DeviceHandler(self),
+                abletonosc.ChainHandler(self),
                 abletonosc.ViewHandler(self),
                 abletonosc.SceneHandler(self),
                 abletonosc.MidiMapHandler(self),
@@ -120,11 +121,12 @@ class Manager(ControlSurface):
 
     def reload_imports(self):
         try:
+            importlib.reload(abletonosc.handler)
             importlib.reload(abletonosc.application)
             importlib.reload(abletonosc.clip)
             importlib.reload(abletonosc.clip_slot)
             importlib.reload(abletonosc.device)
-            importlib.reload(abletonosc.handler)
+            importlib.reload(abletonosc.chain)
             importlib.reload(abletonosc.osc_server)
             importlib.reload(abletonosc.scene)
             importlib.reload(abletonosc.song)
